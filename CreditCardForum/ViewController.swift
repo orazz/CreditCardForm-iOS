@@ -12,7 +12,7 @@ import AKMaskField
 import CreditCardValidator
 
 enum Brands : String {
-    case NONE, Visa, MasterCard, Amex, DEFAULT
+    case NONE, Visa, MasterCard, Amex, JCB, DEFAULT, Discover
 }
 
 class ViewController: UIViewController, STPPaymentCardTextFieldDelegate {
@@ -45,6 +45,9 @@ class ViewController: UIViewController, STPPaymentCardTextFieldDelegate {
         colors[Brands.Visa.rawValue] = [UIColor.hexStr(hexStr: "#5D8BF2", alpha: 1), UIColor.hexStr(hexStr: "#3545AE", alpha: 1)]
         colors[Brands.MasterCard.rawValue] = [UIColor.hexStr(hexStr: "#ED495A", alpha: 1), UIColor.hexStr(hexStr: "#8B1A2B", alpha: 1)]
         colors[Brands.Amex.rawValue] = [UIColor.hexStr(hexStr: "#005B9D", alpha: 1), UIColor.hexStr(hexStr: "#132972", alpha: 1)]
+        colors[Brands.JCB.rawValue] = [UIColor.hexStr(hexStr: "#265797", alpha: 1), UIColor.hexStr(hexStr: "#3d6eaa", alpha: 1)]
+        colors["Diners Club"] = [UIColor.hexStr(hexStr: "#5b99d8", alpha: 1), UIColor.hexStr(hexStr: "#4186CD", alpha: 1)]
+        colors[Brands.Discover.rawValue] = [UIColor.hexStr(hexStr: "#e8a258", alpha: 1), UIColor.hexStr(hexStr: "#D97B16", alpha: 1)]
         colors[Brands.DEFAULT.rawValue] = [UIColor.hexStr(hexStr: "#5D8BF2", alpha: 1), UIColor.hexStr(hexStr: "#3545AE", alpha: 1)]
         
         createCard()
@@ -278,31 +281,41 @@ class ViewController: UIViewController, STPPaymentCardTextFieldDelegate {
     
     func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
         self.cardNumber.text = textField.cardNumber
+        
         self.expireDate.text = NSString(format: "%02ld", textField.expirationMonth) as String + "/" + (NSString(format: "%02ld", textField.expirationYear) as String)
+        
+        if textField.expirationMonth == 0 {
+            expireDate.text = "MM/YY"
+        }
         let v = CreditCardValidator()
         self.cvc.text = textField.cvc
         
-        if (textField.cardNumber?.characters.count)! == 7 || (textField.cardNumber?.characters.count)! < 4 {
-            if let type = v.type(from: "\(textField.cardNumber)") {
-                // Visa, Mastercard, Amex etc.
-                if let name = colors[type.name] {
-                    self.imageView.image = UIImage(named: type.name)
-                    UIView.animate(withDuration: 2, animations: { () -> Void in
-                        self.gradientLayer.colors = [ name.first!.cgColor, name.last!.cgColor]
-                    })
-                    self.backView.backgroundColor = name.first!
-                    self.chipImg.alpha = 1
-                }
-            } else {
+        if (textField.cardNumber?.characters.count)! >= 7 || (textField.cardNumber?.characters.count)! < 4 {
+            
+            guard let type = v.type(from: "\(textField.cardNumber!)") else {
                 self.imageView.image = nil
                 if let name = colors["NONE"] {
-                    UIView.animate(withDuration: 2, animations: { () -> Void in
-                        self.gradientLayer.colors = [ name.first!.cgColor, name.last!.cgColor]
-                    })
-                    self.chipImg.alpha = 0.5
+                    setType(colors: [name[0].cgColor, name[1].cgColor], alpha: 0.5, back: name[0])
                 }
+                return
+            }
+            
+            // Visa, Mastercard, Amex etc.
+            if let name = colors[type.name] {
+                self.imageView.image = UIImage(named: type.name)
+                setType(colors: [name[0].cgColor, name[1].cgColor], alpha: 1, back: name[0])
+            }else{
+                setType(colors: [self.colors["DEFAULT"]![0].cgColor, self.colors["DEFAULT"]![0].cgColor], alpha: 1, back: self.colors["DEFAULT"]![0])
             }
         }
+    }
+    
+    func setType(colors: [CGColor], alpha: CGFloat, back: UIColor) {
+        UIView.animate(withDuration: 2, animations: { () -> Void in
+            self.gradientLayer.colors = colors
+        })
+        self.backView.backgroundColor = back
+        self.chipImg.alpha = alpha
     }
     
     func paymentCardTextFieldDidEndEditingExpiration(_ textField: STPPaymentCardTextField) {
