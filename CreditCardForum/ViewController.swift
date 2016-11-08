@@ -255,8 +255,8 @@ class ViewController: UIViewController, STPPaymentCardTextFieldDelegate {
         let expireDateTextLeadingCont = expireDateText.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -58)
         NSLayoutConstraint.activate([expireDateTextBottom, expireDateTextLeadingCont])
         
-        let chipImgtop = chipImg.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 10)
-        let chipImgtrailing = chipImg.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 10)
+        let chipImgtop = chipImg.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 15)
+        let chipImgtrailing = chipImg.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 15)
         let chipImgwidthConstraint = chipImg.widthAnchor.constraint(equalToConstant: 45)
         let chipImgheightConstraint = chipImg.heightAnchor.constraint(equalToConstant: 30)
         NSLayoutConstraint.activate([chipImgtop, chipImgtrailing, chipImgwidthConstraint, chipImgheightConstraint])
