@@ -1,0 +1,6 @@
+framework module AKMaskField {
+  umbrella header "AKMaskField-umbrella.h"
+
+  export *
+  module * { export * }
+}
