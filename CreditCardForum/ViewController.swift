@@ -167,6 +167,7 @@ class ViewController: UIViewController, STPPaymentCardTextFieldDelegate {
         cvc.text = paymentTextField.cvc
         cvc.backgroundColor = .white
         cvc.textAlignment = NSTextAlignment.center
+        cvc.isUserInteractionEnabled = false
         
         //Chip image
         chipImg = UIImageView(frame: CGRect.zero)
