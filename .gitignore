@@ -1,0 +1,12 @@
+.DS_Store
+
+## Build generated
+build/
+DerivedData/
+
+Example/Demo1-not library/Pods/
+Example/Demo2-CreditCardFormLibarary/Pods/
+
+CreditCardFormTests/
+CreditCardForm.xcodeproj
+
