@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-CreditCardForum.xcscheme</key>
+		<key>Pods-CreditCardForm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>388CCB2DC9889D65FBAA7CAF2EE43A19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>38EE0F5CEE87A0FFC89719F391A4338B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3D61C563C8FEBB8736B029735284C9AB</key>
+		<key>4A0727C68B7651F82F749DBE4F7E146F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1877E4E3AED8633018C74A211108112</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B0AA915C4014C39BFB9961C4841F6761</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E04A44C53A74B2B73BD1F7FB8E4C9A98</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E779E1F234C0485DCF5122BDAD2A9FBE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

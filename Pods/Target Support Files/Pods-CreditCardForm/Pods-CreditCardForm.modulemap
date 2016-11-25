@@ -1,0 +1,6 @@
+framework module Pods_CreditCardForm {
+  umbrella header "Pods-CreditCardForm-umbrella.h"
+
+  export *
+  module * { export * }
+}

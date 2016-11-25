@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CreditCardForum.xcodeproj">
+      location = "group:CreditCardForm.xcworkspace">
+   </FileRef>
+   <FileRef
+      location = "group:CreditCardForm.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

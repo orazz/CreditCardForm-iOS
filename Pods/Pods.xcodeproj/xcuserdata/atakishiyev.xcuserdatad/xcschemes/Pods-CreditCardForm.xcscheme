@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8ED7D02F1DCDFE150054EF92"
-               BuildableName = "CreditCardForum.app"
-               BlueprintName = "CreditCardForum"
-               ReferencedContainer = "container:CreditCardForum.xcodeproj">
+               BlueprintIdentifier = "4A0727C68B7651F82F749DBE4F7E146F"
+               BuildableName = "Pods_CreditCardForm.framework"
+               BlueprintName = "Pods-CreditCardForm"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8ED7D02F1DCDFE150054EF92"
-            BuildableName = "CreditCardForum.app"
-            BlueprintName = "CreditCardForum"
-            ReferencedContainer = "container:CreditCardForum.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,23 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8ED7D02F1DCDFE150054EF92"
-            BuildableName = "CreditCardForum.app"
-            BlueprintName = "CreditCardForum"
-            ReferencedContainer = "container:CreditCardForum.xcodeproj">
+            BlueprintIdentifier = "4A0727C68B7651F82F749DBE4F7E146F"
+            BuildableName = "Pods_CreditCardForm.framework"
+            BlueprintName = "Pods-CreditCardForm"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OS_ACTIVITY_DT_MODE"
-            value = "NO"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -77,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8ED7D02F1DCDFE150054EF92"
-            BuildableName = "CreditCardForum.app"
-            BlueprintName = "CreditCardForum"
-            ReferencedContainer = "container:CreditCardForum.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8ED7D0341DCDFE150054EF92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7D0331DCDFE150054EF92 /* AppDelegate.swift */; };
-		8ED7D0361DCDFE150054EF92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7D0351DCDFE150054EF92 /* ViewController.swift */; };
-		8ED7D0391DCDFE150054EF92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7D0371DCDFE150054EF92 /* Main.storyboard */; };
-		8ED7D03B1DCDFE150054EF92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7D03A1DCDFE150054EF92 /* Assets.xcassets */; };
-		8ED7D03E1DCDFE150054EF92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7D03C1DCDFE150054EF92 /* LaunchScreen.storyboard */; };
-		F278FB0EE10ABE926DE5B7B7 /* Pods_CreditCardForum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79D76106D8AC3F80B5CF998 /* Pods_CreditCardForum.framework */; };
+		67D2E236B0E0C0146DD2ED31 /* Pods_CreditCardForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BAF778973457F473ACD504 /* Pods_CreditCardForm.framework */; };
+		8EC722371DE83E5A0035DBB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC722331DE83E5A0035DBB6 /* LaunchScreen.storyboard */; };
+		8EC722381DE83E5A0035DBB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC722351DE83E5A0035DBB6 /* Main.storyboard */; };
+		8EC7223C1DE840510035DBB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7223A1DE840510035DBB6 /* AppDelegate.swift */; };
+		8EC7223D1DE840510035DBB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7223B1DE840510035DBB6 /* ViewController.swift */; };
+		8EC7223F1DE840870035DBB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC7223E1DE840870035DBB6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CB4EA379CFD48C667395E82 /* Pods-CreditCardForum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardForum.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardForum/Pods-CreditCardForum.release.xcconfig"; sourceTree = "<group>"; };
-		8ED7D0301DCDFE150054EF92 /* CreditCardForum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardForum.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8ED7D0331DCDFE150054EF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8ED7D0351DCDFE150054EF92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8ED7D0381DCDFE150054EF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8ED7D03A1DCDFE150054EF92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8ED7D03D1DCDFE150054EF92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8ED7D03F1DCDFE150054EF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3C519275B30E799C1B052A /* Pods-CreditCardForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardForm/Pods-CreditCardForm.release.xcconfig"; sourceTree = "<group>"; };
+		8EC722341DE83E5A0035DBB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CreditCardForm/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		8EC722361DE83E5A0035DBB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CreditCardForm/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		8EC722391DE83F650035DBB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CreditCardForm/Assets.xcassets; sourceTree = "<group>"; };
+		8EC7223A1DE840510035DBB6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CreditCardForm/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		8EC7223B1DE840510035DBB6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = CreditCardForm/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		8EC7223E1DE840870035DBB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CreditCardForm/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		8ED7D0301DCDFE150054EF92 /* CreditCardForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED7D03F1DCDFE150054EF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = CreditCardForm/Info.plist; sourceTree = "<group>"; };
+		A4B40C851B73C5AB21720CD9 /* Pods-CreditCardForm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardForm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardForm/Pods-CreditCardForm.debug.xcconfig"; sourceTree = "<group>"; };
+		A9BAF778973457F473ACD504 /* Pods_CreditCardForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9923DF5116039C518BA404D /* Pods-CreditCardForum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardForum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardForum/Pods-CreditCardForum.debug.xcconfig"; sourceTree = "<group>"; };
 		D79D76106D8AC3F80B5CF998 /* Pods_CreditCardForum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardForum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -33,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F278FB0EE10ABE926DE5B7B7 /* Pods_CreditCardForum.framework in Frameworks */,
+				67D2E236B0E0C0146DD2ED31 /* Pods_CreditCardForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +49,8 @@
 			children = (
 				B9923DF5116039C518BA404D /* Pods-CreditCardForum.debug.xcconfig */,
 				4CB4EA379CFD48C667395E82 /* Pods-CreditCardForum.release.xcconfig */,
+				A4B40C851B73C5AB21720CD9 /* Pods-CreditCardForm.debug.xcconfig */,
+				7D3C519275B30E799C1B052A /* Pods-CreditCardForm.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -52,7 +58,8 @@
 		8ED7D0271DCDFE150054EF92 = {
 			isa = PBXGroup;
 			children = (
-				8ED7D0321DCDFE150054EF92 /* CreditCardForum */,
+				8EC722391DE83F650035DBB6 /* Assets.xcassets */,
+				8ED7D0321DCDFE150054EF92 /* CreditCardForm */,
 				8ED7D0311DCDFE150054EF92 /* Products */,
 				8058B8B3651631BA3148D9E1 /* Pods */,
 				C0D7F4FEAB3479C68B0FD050 /* Frameworks */,
@@ -62,21 +69,22 @@
 		8ED7D0311DCDFE150054EF92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8ED7D0301DCDFE150054EF92 /* CreditCardForum.app */,
+				8ED7D0301DCDFE150054EF92 /* CreditCardForm.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8ED7D0321DCDFE150054EF92 /* CreditCardForum */ = {
+		8ED7D0321DCDFE150054EF92 /* CreditCardForm */ = {
 			isa = PBXGroup;
 			children = (
-				8ED7D0331DCDFE150054EF92 /* AppDelegate.swift */,
-				8ED7D0351DCDFE150054EF92 /* ViewController.swift */,
-				8ED7D0371DCDFE150054EF92 /* Main.storyboard */,
-				8ED7D03A1DCDFE150054EF92 /* Assets.xcassets */,
-				8ED7D03C1DCDFE150054EF92 /* LaunchScreen.storyboard */,
+				8EC7223A1DE840510035DBB6 /* AppDelegate.swift */,
+				8EC7223B1DE840510035DBB6 /* ViewController.swift */,
+				8EC7223E1DE840870035DBB6 /* Assets.xcassets */,
 				8ED7D03F1DCDFE150054EF92 /* Info.plist */,
+				8EC722331DE83E5A0035DBB6 /* LaunchScreen.storyboard */,
+				8EC722351DE83E5A0035DBB6 /* Main.storyboard */,
 			);
+			name = CreditCardForm;
 			path = CreditCardForum;
 			sourceTree = "<group>";
 		};
@@ -84,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D79D76106D8AC3F80B5CF998 /* Pods_CreditCardForum.framework */,
+				A9BAF778973457F473ACD504 /* Pods_CreditCardForm.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8ED7D02F1DCDFE150054EF92 /* CreditCardForum */ = {
+		8ED7D02F1DCDFE150054EF92 /* CreditCardForm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8ED7D0421DCDFE150054EF92 /* Build configuration list for PBXNativeTarget "CreditCardForum" */;
+			buildConfigurationList = 8ED7D0421DCDFE150054EF92 /* Build configuration list for PBXNativeTarget "CreditCardForm" */;
 			buildPhases = (
 				85E278AF2374324EAC32E61C /* [CP] Check Pods Manifest.lock */,
 				8ED7D02C1DCDFE150054EF92 /* Sources */,
@@ -106,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = CreditCardForum;
+			name = CreditCardForm;
 			productName = CreditCardForum;
-			productReference = 8ED7D0301DCDFE150054EF92 /* CreditCardForum.app */;
+			productReference = 8ED7D0301DCDFE150054EF92 /* CreditCardForm.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,11 +133,12 @@
 					8ED7D02F1DCDFE150054EF92 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 683U48NZTT;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 8ED7D02B1DCDFE150054EF92 /* Build configuration list for PBXProject "CreditCardForum" */;
+			buildConfigurationList = 8ED7D02B1DCDFE150054EF92 /* Build configuration list for PBXProject "CreditCardForm" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -141,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8ED7D02F1DCDFE150054EF92 /* CreditCardForum */,
+				8ED7D02F1DCDFE150054EF92 /* CreditCardForm */,
 			);
 		};
 /* End PBXProject section */
@@ -151,9 +161,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ED7D03E1DCDFE150054EF92 /* LaunchScreen.storyboard in Resources */,
-				8ED7D03B1DCDFE150054EF92 /* Assets.xcassets in Resources */,
-				8ED7D0391DCDFE150054EF92 /* Main.storyboard in Resources */,
+				8EC722381DE83E5A0035DBB6 /* Main.storyboard in Resources */,
+				8EC7223F1DE840870035DBB6 /* Assets.xcassets in Resources */,
+				8EC722371DE83E5A0035DBB6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +197,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CreditCardForum/Pods-CreditCardForum-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CreditCardForm/Pods-CreditCardForm-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BF4CEC89B5C1AD0059B9105E /* [CP] Embed Pods Frameworks */ = {
@@ -202,7 +212,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CreditCardForum/Pods-CreditCardForum-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CreditCardForm/Pods-CreditCardForm-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -212,28 +222,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ED7D0361DCDFE150054EF92 /* ViewController.swift in Sources */,
-				8ED7D0341DCDFE150054EF92 /* AppDelegate.swift in Sources */,
+				8EC7223D1DE840510035DBB6 /* ViewController.swift in Sources */,
+				8EC7223C1DE840510035DBB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8ED7D0371DCDFE150054EF92 /* Main.storyboard */ = {
+		8EC722331DE83E5A0035DBB6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8ED7D0381DCDFE150054EF92 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8ED7D03C1DCDFE150054EF92 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8ED7D03D1DCDFE150054EF92 /* Base */,
+				8EC722341DE83E5A0035DBB6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8EC722351DE83E5A0035DBB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EC722361DE83E5A0035DBB6 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -334,25 +344,28 @@
 		};
 		8ED7D0431DCDFE150054EF92 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9923DF5116039C518BA404D /* Pods-CreditCardForum.debug.xcconfig */;
+			baseConfigurationReference = A4B40C851B73C5AB21720CD9 /* Pods-CreditCardForm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 683U48NZTT;
-				INFOPLIST_FILE = CreditCardForum/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CreditCardForm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.veriloft.CreditCardForum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8ED7D0441DCDFE150054EF92 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CB4EA379CFD48C667395E82 /* Pods-CreditCardForum.release.xcconfig */;
+			baseConfigurationReference = 7D3C519275B30E799C1B052A /* Pods-CreditCardForm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 683U48NZTT;
-				INFOPLIST_FILE = CreditCardForum/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CreditCardForm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.veriloft.CreditCardForum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,7 +376,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8ED7D02B1DCDFE150054EF92 /* Build configuration list for PBXProject "CreditCardForum" */ = {
+		8ED7D02B1DCDFE150054EF92 /* Build configuration list for PBXProject "CreditCardForm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ED7D0401DCDFE150054EF92 /* Debug */,
@@ -372,7 +385,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8ED7D0421DCDFE150054EF92 /* Build configuration list for PBXNativeTarget "CreditCardForum" */ = {
+		8ED7D0421DCDFE150054EF92 /* Build configuration list for PBXNativeTarget "CreditCardForm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ED7D0431DCDFE150054EF92 /* Debug */,
