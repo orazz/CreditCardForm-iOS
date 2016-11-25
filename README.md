@@ -1,5 +1,5 @@
-# CreditCardForum-iOS
-CreditCardForum-iOS is an iOS demo app that allows developers to create the UI which replicates an actual Credit Card.
+# CreditCardForm-iOS
+CreditCardForm-iOS is an iOS demo app that allows developers to create the UI which replicates an actual Credit Card.
 
 <img src="https://dotjpg.co/8bu.png" width="300">
 
