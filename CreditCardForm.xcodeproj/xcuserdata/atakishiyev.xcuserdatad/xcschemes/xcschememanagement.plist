@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CreditCardForum.xcscheme</key>
+		<key>CreditCardForm.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8ED7D02F1DCDFE150054EF92</key>
+		<key>8EC8C3C81DEC8C3E0044FB44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8EC8C3D11DEC8C3E0044FB44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
