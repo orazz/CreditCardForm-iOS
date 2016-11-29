@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/orazz/CreditCardForm-iOS.git", :tag => "v1.0.0" }
 
-  s.source_files  = "CreditCardForm", "Classes/**/*.{h,m,swift}"
+  s.source_files  = "CreditCardForm/Classes/*.swift"
 
   s.resource  = "CreditCardForm/*.png"
 
