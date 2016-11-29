@@ -11,10 +11,6 @@ import Stripe
 import AKMaskField
 import CreditCardValidator
 
-enum Brands : String {
-    case NONE, Visa, MasterCard, Amex, JCB, DEFAULT, Discover
-}
-
 class ViewController: UIViewController, STPPaymentCardTextFieldDelegate {
     
     let paymentTextField = STPPaymentCardTextField()

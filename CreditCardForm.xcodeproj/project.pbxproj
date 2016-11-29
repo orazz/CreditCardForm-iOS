@@ -13,6 +13,7 @@
 		8EC7223C1DE840510035DBB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7223A1DE840510035DBB6 /* AppDelegate.swift */; };
 		8EC7223D1DE840510035DBB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7223B1DE840510035DBB6 /* ViewController.swift */; };
 		8EC7223F1DE840870035DBB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC7223E1DE840870035DBB6 /* Assets.xcassets */; };
+		8EC8C3F61DED64CA0044FB44 /* WithStroyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C3F51DED64CA0044FB44 /* WithStroyboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8EC7223A1DE840510035DBB6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = CreditCardForm/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		8EC7223B1DE840510035DBB6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = CreditCardForm/ViewController.swift; sourceTree = SOURCE_ROOT; };
 		8EC7223E1DE840870035DBB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CreditCardForm/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		8EC8C3F51DED64CA0044FB44 /* WithStroyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WithStroyboardViewController.swift; path = CreditCardForm/WithStroyboardViewController.swift; sourceTree = SOURCE_ROOT; };
 		8ED7D0301DCDFE150054EF92 /* CreditCardForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED7D03F1DCDFE150054EF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = CreditCardForm/Info.plist; sourceTree = "<group>"; };
 		A4B40C851B73C5AB21720CD9 /* Pods-CreditCardForm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardForm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardForm/Pods-CreditCardForm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				8EC7223A1DE840510035DBB6 /* AppDelegate.swift */,
 				8EC7223B1DE840510035DBB6 /* ViewController.swift */,
+				8EC8C3F51DED64CA0044FB44 /* WithStroyboardViewController.swift */,
 				8EC7223E1DE840870035DBB6 /* Assets.xcassets */,
 				8ED7D03F1DCDFE150054EF92 /* Info.plist */,
 				8EC722331DE83E5A0035DBB6 /* LaunchScreen.storyboard */,
@@ -127,7 +130,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Veriloft;
 				TargetAttributes = {
 					8ED7D02F1DCDFE150054EF92 = {
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC7223D1DE840510035DBB6 /* ViewController.swift in Sources */,
+				8EC8C3F61DED64CA0044FB44 /* WithStroyboardViewController.swift in Sources */,
 				8EC7223C1DE840510035DBB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +271,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -317,6 +322,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -346,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4B40C851B73C5AB21720CD9 /* Pods-CreditCardForm.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 683U48NZTT;
@@ -362,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7D3C519275B30E799C1B052A /* Pods-CreditCardForm.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 683U48NZTT;

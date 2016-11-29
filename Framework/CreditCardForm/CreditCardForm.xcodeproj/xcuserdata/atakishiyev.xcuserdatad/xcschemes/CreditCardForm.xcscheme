@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A1877E4E3AED8633018C74A211108112"
-               BuildableName = "Stripe.bundle"
-               BlueprintName = "Stripe-Stripe"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "8EC8C3C81DEC8C3E0044FB44"
+               BuildableName = "CreditCardForm.framework"
+               BlueprintName = "CreditCardForm"
+               ReferencedContainer = "container:CreditCardForm.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8EC8C3D11DEC8C3E0044FB44"
+               BuildableName = "CreditCardFormTests.xctest"
+               BlueprintName = "CreditCardFormTests"
+               ReferencedContainer = "container:CreditCardForm.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8EC8C3C81DEC8C3E0044FB44"
+            BuildableName = "CreditCardForm.framework"
+            BlueprintName = "CreditCardForm"
+            ReferencedContainer = "container:CreditCardForm.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,10 +64,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A1877E4E3AED8633018C74A211108112"
-            BuildableName = "Stripe.bundle"
-            BlueprintName = "Stripe-Stripe"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "8EC8C3C81DEC8C3E0044FB44"
+            BuildableName = "CreditCardForm.framework"
+            BlueprintName = "CreditCardForm"
+            ReferencedContainer = "container:CreditCardForm.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,6 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8EC8C3C81DEC8C3E0044FB44"
+            BuildableName = "CreditCardForm.framework"
+            BlueprintName = "CreditCardForm"
+            ReferencedContainer = "container:CreditCardForm.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
