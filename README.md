@@ -1,7 +1,6 @@
 # CreditCardForm
 
-<a href="https://cocoapods.org/pods/CreditCardForm"><img src="https://img.shields.io/badge/pod-0.0.1-blue.svg" alt="CocoaPods compatible" /></a>
-[![CI Status](http://img.shields.io/travis/orazz/CreditCardForm.svg?style=flat)](https://travis-ci.org/orazz/CreditCardForm/)
+<a href="https://cocoapods.org/pods/CreditCardForm"><img src="https://img.shields.io/badge/pod-0.0.1-blue.svg" alt="CocoaPods compatible" /></a><a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat" alt="Swift 3 compatible" /></a>
 <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
 <a href="https://github.com/orazz/CreditCardForm-iOS/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
 
