@@ -1,6 +1,5 @@
 # CreditCardForm
 
-<<<<<<< HEAD
 <a href="https://cocoapods.org/pods/CreditCardForm"><img src="https://img.shields.io/badge/pod-0.0.1-blue.svg" alt="CocoaPods compatible" /></a>
 [![CI Status](http://img.shields.io/travis/candostdagdeviren/CDAlertView.svg?style=flat)](https://travis-ci.org/candostdagdeviren/CDAlertView/)
 <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat" alt="Swift 3 compatible" /></a>
@@ -32,9 +31,6 @@ pod "CreditCardForm"
 
 * Xcode 8
 * iOS 9.0+
-=======
-<img src="https://dotjpg.co/8bu.png" width="300">  <img src="CreditCardDemo.gif" width="300">
->>>>>>> 10c50634148af5755d4a649ca9be2dec4a1394d9
 
 ## Authors
 
