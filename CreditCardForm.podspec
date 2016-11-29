@@ -15,9 +15,11 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/orazz/CreditCardForm-iOS.git", :tag => "v1.0.0" }
 
-  s.source_files  = "CreditCardForm/Classes/**/*"
-
-  s.resource  = "CreditCardForm/*.png"
+  s.source_files  = "CreditCardForm/Classes/*.swift"
+  s.resource  = "CreditCardForm/Classes/**/*"
+  s.resource_bundles = {
+    'CreditCardForm' => ['CreditCardForm/Assets.xcassets']
+  }
   s.frameworks = 'UIKit'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
 end

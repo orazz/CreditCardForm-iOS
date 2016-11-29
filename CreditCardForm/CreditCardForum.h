@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double CreditCardFormVersionNumber;
 FOUNDATION_EXPORT const unsigned char CreditCardFormVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CreditCardForm/PublicHeader.h>
-
-
