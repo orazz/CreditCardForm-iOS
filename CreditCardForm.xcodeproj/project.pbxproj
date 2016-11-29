@@ -23,6 +23,7 @@
 		8EC8C5021DEDA1340044FB44 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F71DEDA1340044FB44 /* Utilities.swift */; };
 		8EC8C5041DEDB30D0044FB44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8C5031DEDB30D0044FB44 /* Assets.xcassets */; };
 		8EC8C50A1DEDB5EA0044FB44 /* CreditCardForum.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC8C5091DEDB5EA0044FB44 /* CreditCardForum.h */; };
+		8EC8C50C1DEDC0420044FB44 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C50B1DEDC0420044FB44 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		8EC8C4F71DEDA1340044FB44 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Classes/Utilities.swift; sourceTree = "<group>"; };
 		8EC8C5031DEDB30D0044FB44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EC8C5091DEDB5EA0044FB44 /* CreditCardForum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardForum.h; sourceTree = "<group>"; };
+		8EC8C50B1DEDC0420044FB44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		ADEDAE40183C8D1AA2D6877F /* Pods_CreditCardForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4314B94611DE7DC5707251A /* Pods-CreditCardFormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardFormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardFormTests/Pods-CreditCardFormTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 				8EC8C4F61DEDA1340044FB44 /* CreditCardValidator.swift */,
 				8EC8C4F71DEDA1340044FB44 /* Utilities.swift */,
 				8EC8C5031DEDB30D0044FB44 /* Assets.xcassets */,
+				8EC8C50B1DEDC0420044FB44 /* README.md */,
 			);
 			path = CreditCardForm;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				8EC8C4F81DEDA1340044FB44 /* AKMaskField.swift in Sources */,
 				8EC8C5011DEDA1340044FB44 /* CreditCardValidator.swift in Sources */,
 				8EC8C4FA1DEDA1340044FB44 /* AKMaskFieldBlockCharacter.swift in Sources */,
+				8EC8C50C1DEDC0420044FB44 /* README.md in Sources */,
 				8EC8C4FE1DEDA1340044FB44 /* AKMaskFieldUtility.swift in Sources */,
 				8EC8C4FC1DEDA1340044FB44 /* AKMaskFieldPatternCharacter.swift in Sources */,
 				8EC8C4FF1DEDA1340044FB44 /* CreditCardForumView.swift in Sources */,

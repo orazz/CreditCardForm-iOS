@@ -3,7 +3,7 @@ CreditCardForm-iOS is an iOS demo app that allows developers to create the UI wh
 
 <img src="https://dotjpg.co/8bu.png" width="300">
 
-<img src="CreditCardDemo.gif" width="300">
+<img src="Example/Screens/CreditCardDemo.gif" width="300">
 
 ## Authors
 
