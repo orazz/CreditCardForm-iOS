@@ -134,12 +134,13 @@ public class CreditCardForumView : UIView {
         cardView.backgroundColor = .red
         self.addSubview(cardView)
         //CardView
-        NSLayoutConstraint.activate([
-            cardView.topAnchor.constraint(equalTo: self.topAnchor),
-            cardView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            cardView.widthAnchor.constraint(equalTo: self.widthAnchor),
-            cardView.heightAnchor.constraint(equalTo: self.heightAnchor)
-        ])
+        self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.width, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.height, multiplier: 1.0, constant: 0.0));
     }
     
     private func createBackView() {
@@ -149,12 +150,13 @@ public class CreditCardForumView : UIView {
         backView.autoresizingMask = [UIViewAutoresizing.flexibleLeftMargin, UIViewAutoresizing.flexibleRightMargin, UIViewAutoresizing.flexibleTopMargin, UIViewAutoresizing.flexibleBottomMargin]
         cardView.addSubview(backView)
         
-        NSLayoutConstraint.activate([
-            backView.topAnchor.constraint(equalTo: self.topAnchor),
-            backView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            backView.widthAnchor.constraint(equalTo: self.widthAnchor),
-            backView.heightAnchor.constraint(equalTo: self.heightAnchor)
-        ])
+        self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.width, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: backView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.height, multiplier: 1.0, constant: 0.0));
     }
     
     private func createFrontView() {
@@ -165,12 +167,13 @@ public class CreditCardForumView : UIView {
         cardView.addSubview(frontView)
         setGradientBackground(v: frontView, top: defaultCardColor.cgColor, bottom: defaultCardColor.cgColor)
         
-        NSLayoutConstraint.activate([
-            frontView.topAnchor.constraint(equalTo: self.topAnchor),
-            frontView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            frontView.widthAnchor.constraint(equalTo: self.widthAnchor),
-            frontView.heightAnchor.constraint(equalTo: self.heightAnchor)
-        ])
+        self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.width, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: frontView, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.height, multiplier: 1.0, constant: 0.0));
     }
     
     private func createbackImage() {
@@ -179,12 +182,13 @@ public class CreditCardForumView : UIView {
         backImage.contentMode = UIViewContentMode.scaleAspectFill
         frontView.addSubview(backImage)
         
-        NSLayoutConstraint.activate([
-            backImage.topAnchor.constraint(equalTo: cardView.topAnchor),
-            backImage.leadingAnchor.constraint(equalTo: cardView.leadingAnchor),
-            backImage.trailingAnchor.constraint(equalTo: cardView.trailingAnchor),
-            backImage.bottomAnchor.constraint(equalTo: cardView.bottomAnchor),
-        ])
+        self.addConstraint(NSLayoutConstraint(item: backImage, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: backImage, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.leading, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: backImage, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.trailing, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: backImage, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: 0.0));
     }
     
     private func createBrandImageView() {
@@ -192,13 +196,14 @@ public class CreditCardForumView : UIView {
         brandImageView.translatesAutoresizingMaskIntoConstraints = false
         brandImageView.contentMode = UIViewContentMode.scaleAspectFit
         frontView.addSubview(brandImageView)
-
-        NSLayoutConstraint.activate([
-            brandImageView.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 10),
-            brandImageView.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -10),
-            brandImageView.widthAnchor.constraint(equalToConstant: 60),
-            brandImageView.heightAnchor.constraint(equalToConstant: 40),
-        ])
+        
+        self.addConstraint(NSLayoutConstraint(item: brandImageView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 10));
+        
+        self.addConstraint(NSLayoutConstraint(item: brandImageView, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.trailing, multiplier: 1.0, constant: -10));
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==60)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": brandImageView]));
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==40)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": brandImageView]));
     }
     
     private func createCardNumber() {
@@ -211,12 +216,13 @@ public class CreditCardForumView : UIView {
         cardNumber.font = UIFont(name: "Helvetica Neue", size: 20)
         frontView.addSubview(cardNumber)
         
-        NSLayoutConstraint.activate([
-            cardNumber.centerXAnchor.constraint(equalTo: cardView.centerXAnchor),
-            cardNumber.centerYAnchor.constraint(equalTo: cardView.centerYAnchor),
-            cardNumber.widthAnchor.constraint(equalToConstant: 200),
-            cardNumber.heightAnchor.constraint(equalToConstant: 30),
-        ])
+        self.addConstraint(NSLayoutConstraint(item: cardNumber, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraint(NSLayoutConstraint(item: cardNumber, attribute: NSLayoutAttribute.centerY, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.centerY, multiplier: 1.0, constant: 0.0));
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==200)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": cardNumber]));
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==30)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": cardNumber]));
     }
     
     private func createCardHolder() {
@@ -227,10 +233,9 @@ public class CreditCardForumView : UIView {
         cardHolder.text = cardHolderString
         frontView.addSubview(cardHolder)
         
-        NSLayoutConstraint.activate([
-            cardHolder.bottomAnchor.constraint(equalTo: cardView.bottomAnchor, constant: -20),
-            cardHolder.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 15)
-        ])
+        self.addConstraint(NSLayoutConstraint(item: cardHolder, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: -20));
+        
+        self.addConstraint(NSLayoutConstraint(item: cardHolder, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.leading, multiplier: 1.0, constant: 15));
     }
     
     private func createCardHolderText() {
@@ -241,10 +246,9 @@ public class CreditCardForumView : UIView {
         cardHolderText.textColor = cardHolderExpireDateTextColor
         frontView.addSubview(cardHolderText)
         
-        NSLayoutConstraint.activate([
-            cardHolderText.bottomAnchor.constraint(equalTo: cardHolder.topAnchor, constant: -3),
-            cardHolderText.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 15)
-        ])
+        self.addConstraint(NSLayoutConstraint(item: cardHolderText, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: cardHolder, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: -3));
+        
+        self.addConstraint(NSLayoutConstraint(item: cardHolderText, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.leading, multiplier: 1.0, constant: 15));
     }
     
     private func createExpireDate() {
@@ -257,10 +261,9 @@ public class CreditCardForumView : UIView {
         expireDate.textColor = cardHolderExpireDateColor
         frontView.addSubview(expireDate)
         
-        NSLayoutConstraint.activate([
-            expireDate.bottomAnchor.constraint(equalTo: cardView.bottomAnchor, constant: -20),
-            expireDate.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -55)
-        ])
+        self.addConstraint(NSLayoutConstraint(item: expireDate, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: -20));
+        
+        self.addConstraint(NSLayoutConstraint(item: expireDate, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.trailing, multiplier: 1.0, constant: -55));
     }
     
     private func createExpireDateText() {
@@ -271,10 +274,9 @@ public class CreditCardForumView : UIView {
         expireDateText.textColor = cardHolderExpireDateTextColor
         frontView.addSubview(expireDateText)
         
-        NSLayoutConstraint.activate([
-            expireDateText.bottomAnchor.constraint(equalTo: expireDate.topAnchor, constant: -3),
-            expireDateText.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -58)
-        ])
+        self.addConstraint(NSLayoutConstraint(item: expireDateText, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: expireDate, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: -3));
+        
+        self.addConstraint(NSLayoutConstraint(item: expireDateText, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.trailing, multiplier: 1.0, constant: -58));
     }
     
     private func createChipImage() {
@@ -284,12 +286,13 @@ public class CreditCardForumView : UIView {
         chipImg.image = chipImage
         frontView.addSubview(chipImg)
         
-        NSLayoutConstraint.activate([
-            chipImg.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 15),
-            chipImg.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 15),
-            chipImg.widthAnchor.constraint(equalToConstant: 45),
-            chipImg.heightAnchor.constraint(equalToConstant: 30)
-            ])
+        self.addConstraint(NSLayoutConstraint(item: chipImg, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 15));
+        
+        self.addConstraint(NSLayoutConstraint(item: chipImg, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.leading, multiplier: 1.0, constant: 15));
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==45)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": chipImg]));
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==30)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": chipImg]));
     }
     
     private func createBackLine() {
@@ -298,12 +301,13 @@ public class CreditCardForumView : UIView {
         backLine.backgroundColor = backLineColor
         backView.addSubview(backLine)
         
-        NSLayoutConstraint.activate([
-            backLine.topAnchor.constraint(equalTo: backView.topAnchor, constant: 20),
-            backLine.centerXAnchor.constraint(equalTo: backView.centerXAnchor),
-            backLine.widthAnchor.constraint(equalToConstant: 300),
-            backLine.heightAnchor.constraint(equalToConstant: 50)
-        ])
+        self.addConstraint(NSLayoutConstraint(item: backLine, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: backView, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 20));
+        
+        self.addConstraint(NSLayoutConstraint(item: backLine, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: backView, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0));
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==300)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": backLine]));
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==50)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": backLine]));
     }
     
     private func createCVC() {
@@ -316,12 +320,13 @@ public class CreditCardForumView : UIView {
         cvc.isUserInteractionEnabled = false
         backView.addSubview(cvc)
         
-        NSLayoutConstraint.activate([
-            cvc.topAnchor.constraint(equalTo: backLine.bottomAnchor, constant: 10),
-            cvc.widthAnchor.constraint(equalToConstant: 50),
-            cvc.heightAnchor.constraint(equalToConstant: 25),
-            cvc.trailingAnchor.constraint(equalTo: backView.trailingAnchor, constant: -10)
-        ])
+        self.addConstraint(NSLayoutConstraint(item: cvc, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: backLine, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: 10));
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==50)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": cvc]));
+        
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==25)]", options: NSLayoutFormatOptions(rawValue: 0), metrics: nil, views: ["view": cvc]));
+        
+        self.addConstraint(NSLayoutConstraint(item: cvc, attribute: NSLayoutAttribute.trailing, relatedBy: NSLayoutRelation.equal, toItem: backView, attribute: NSLayoutAttribute.trailing, multiplier: 1.0, constant: -10));
     }
     
     private func setType(colors: [UIColor], alpha: CGFloat, back: UIColor) {
@@ -413,9 +418,3 @@ extension CreditCardForumView {
         colors[Brands.DEFAULT.rawValue] = [UIColor.hexStr(hexStr: "#5D8BF2", alpha: 1), UIColor.hexStr(hexStr: "#3545AE", alpha: 1)]
     }
 }
-
-
-
-
-
-
