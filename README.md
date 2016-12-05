@@ -1,10 +1,10 @@
 # CreditCardForm
 
-<a href="https://cocoapods.org/pods/CreditCardForm"><img src="https://img.shields.io/badge/pod-0.0.4-blue.svg" alt="CocoaPods compatible" /></a>
-[![CI Status](http://img.shields.io/travis/candostdagdeviren/CDAlertView.svg?style=flat)](https://travis-ci.org/candostdagdeviren/CDAlertView/)
+<a href="https://cocoapods.org/pods/CreditCardForm"><img src="https://img.shields.io/badge/pod-0.0.5-blue.svg" alt="CocoaPods compatible" /></a>
+[![CI Status](https://travis-ci.org/orazz/CreditCardForm-iOS.svg?branch=master)](https://travis-ci.org/orazz/CreditCardForm-iOS)
 <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat" alt="Swift 3 compatible" /></a>
 <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
-<a href="https://raw.githubusercontent.com/candostdagdeviren/CDAlertView/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
+<a href="https://github.com/orazz/CreditCardForm-iOS/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
 
 CreditCardForm is iOS framework that allows developers to create the UI which replicates an actual Credit Card.
 
@@ -25,6 +25,14 @@ CreditCardForm is available through CocoaPods. To install it, simply add the fol
 
 ```ruby
 pod "CreditCardForm"
+```
+
+### Using [Carthage](https://github.com/Carthage/Carthage)
+
+CreditCardForm is available through Carthage. To install it, simply add the following line to your `Cartfile`:
+
+```ruby
+github "orazz/CreditCardForm-iOS"
 ```
 
 ## Requirements
