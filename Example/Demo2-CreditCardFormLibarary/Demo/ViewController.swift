@@ -12,7 +12,7 @@ import CreditCardForm
 
 class ViewController: UIViewController, STPPaymentCardTextFieldDelegate {
 
-    @IBOutlet weak var creditCardView: CreditCardForumView!
+    @IBOutlet weak var creditCardView: CreditCardFormView!
     let paymentTextField = STPPaymentCardTextField()
     
     override func viewDidLoad() {
