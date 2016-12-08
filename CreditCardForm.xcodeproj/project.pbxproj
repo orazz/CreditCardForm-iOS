@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5639844A00E3E6E670C48111 /* Pods_CreditCardFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B58AD822FD99C8D36962BC8 /* Pods_CreditCardFormTests.framework */; };
+		8EB6C7961DF93FD300225444 /* CreditCardForm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8EB6C7951DF93FD300225444 /* CreditCardForm.podspec */; };
 		8EC8C3D31DEC8C3E0044FB44 /* CreditCardForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC8C3C91DEC8C3E0044FB44 /* CreditCardForm.framework */; };
 		8EC8C3D81DEC8C3E0044FB44 /* CreditCardFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C3D71DEC8C3E0044FB44 /* CreditCardFormTests.swift */; };
 		8EC8C4F81DEDA1340044FB44 /* AKMaskField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4ED1DEDA1340044FB44 /* AKMaskField.swift */; };
@@ -17,12 +18,12 @@
 		8EC8C4FC1DEDA1340044FB44 /* AKMaskFieldPatternCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F11DEDA1340044FB44 /* AKMaskFieldPatternCharacter.swift */; };
 		8EC8C4FD1DEDA1340044FB44 /* AKMaskFieldStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F21DEDA1340044FB44 /* AKMaskFieldStatus.swift */; };
 		8EC8C4FE1DEDA1340044FB44 /* AKMaskFieldUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F31DEDA1340044FB44 /* AKMaskFieldUtility.swift */; };
-		8EC8C4FF1DEDA1340044FB44 /* CreditCardForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F41DEDA1340044FB44 /* CreditCardForumView.swift */; };
+		8EC8C4FF1DEDA1340044FB44 /* CreditCardFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F41DEDA1340044FB44 /* CreditCardFormView.swift */; };
 		8EC8C5001DEDA1340044FB44 /* CreditCardValidationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F51DEDA1340044FB44 /* CreditCardValidationType.swift */; };
 		8EC8C5011DEDA1340044FB44 /* CreditCardValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F61DEDA1340044FB44 /* CreditCardValidator.swift */; };
 		8EC8C5021DEDA1340044FB44 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F71DEDA1340044FB44 /* Utilities.swift */; };
 		8EC8C5041DEDB30D0044FB44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8C5031DEDB30D0044FB44 /* Assets.xcassets */; };
-		8EC8C50A1DEDB5EA0044FB44 /* CreditCardForum.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC8C5091DEDB5EA0044FB44 /* CreditCardForum.h */; };
+		8EC8C50A1DEDB5EA0044FB44 /* CreditCardForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC8C5091DEDB5EA0044FB44 /* CreditCardForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EC8C50C1DEDC0420044FB44 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C50B1DEDC0420044FB44 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		5B58AD822FD99C8D36962BC8 /* Pods_CreditCardFormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardFormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D88D4003675FFBE5B168C26 /* Pods-CreditCardFormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardFormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardFormTests/Pods-CreditCardFormTests.release.xcconfig"; sourceTree = "<group>"; };
 		896DC78929C1F339B7C737C9 /* Pods-CreditCardForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardForm/Pods-CreditCardForm.release.xcconfig"; sourceTree = "<group>"; };
+		8EB6C7951DF93FD300225444 /* CreditCardForm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CreditCardForm.podspec; sourceTree = SOURCE_ROOT; };
 		8EC8C3C91DEC8C3E0044FB44 /* CreditCardForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CreditCardForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC8C3CD1DEC8C3E0044FB44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		8EC8C3D21DEC8C3E0044FB44 /* CreditCardFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditCardFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,12 +55,12 @@
 		8EC8C4F11DEDA1340044FB44 /* AKMaskFieldPatternCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKMaskFieldPatternCharacter.swift; path = Classes/AKMaskFieldPatternCharacter.swift; sourceTree = "<group>"; };
 		8EC8C4F21DEDA1340044FB44 /* AKMaskFieldStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKMaskFieldStatus.swift; path = Classes/AKMaskFieldStatus.swift; sourceTree = "<group>"; };
 		8EC8C4F31DEDA1340044FB44 /* AKMaskFieldUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKMaskFieldUtility.swift; path = Classes/AKMaskFieldUtility.swift; sourceTree = "<group>"; };
-		8EC8C4F41DEDA1340044FB44 /* CreditCardForumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCardForumView.swift; path = Classes/CreditCardForumView.swift; sourceTree = "<group>"; };
+		8EC8C4F41DEDA1340044FB44 /* CreditCardFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCardFormView.swift; path = Classes/CreditCardFormView.swift; sourceTree = "<group>"; };
 		8EC8C4F51DEDA1340044FB44 /* CreditCardValidationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCardValidationType.swift; path = Classes/CreditCardValidationType.swift; sourceTree = "<group>"; };
 		8EC8C4F61DEDA1340044FB44 /* CreditCardValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCardValidator.swift; path = Classes/CreditCardValidator.swift; sourceTree = "<group>"; };
 		8EC8C4F71DEDA1340044FB44 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Classes/Utilities.swift; sourceTree = "<group>"; };
 		8EC8C5031DEDB30D0044FB44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8EC8C5091DEDB5EA0044FB44 /* CreditCardForum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardForum.h; sourceTree = "<group>"; };
+		8EC8C5091DEDB5EA0044FB44 /* CreditCardForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardForm.h; sourceTree = "<group>"; };
 		8EC8C50B1DEDC0420044FB44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		ADEDAE40183C8D1AA2D6877F /* Pods_CreditCardForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4314B94611DE7DC5707251A /* Pods-CreditCardFormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardFormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardFormTests/Pods-CreditCardFormTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				8EC8C3CD1DEC8C3E0044FB44 /* Info.plist */,
-				8EC8C5091DEDB5EA0044FB44 /* CreditCardForum.h */,
+				8EC8C5091DEDB5EA0044FB44 /* CreditCardForm.h */,
 				8EC8C4ED1DEDA1340044FB44 /* AKMaskField.swift */,
 				8EC8C4EE1DEDA1340044FB44 /* AKMaskFieldBlock.swift */,
 				8EC8C4EF1DEDA1340044FB44 /* AKMaskFieldBlockCharacter.swift */,
@@ -127,12 +129,13 @@
 				8EC8C4F11DEDA1340044FB44 /* AKMaskFieldPatternCharacter.swift */,
 				8EC8C4F21DEDA1340044FB44 /* AKMaskFieldStatus.swift */,
 				8EC8C4F31DEDA1340044FB44 /* AKMaskFieldUtility.swift */,
-				8EC8C4F41DEDA1340044FB44 /* CreditCardForumView.swift */,
+				8EC8C4F41DEDA1340044FB44 /* CreditCardFormView.swift */,
 				8EC8C4F51DEDA1340044FB44 /* CreditCardValidationType.swift */,
 				8EC8C4F61DEDA1340044FB44 /* CreditCardValidator.swift */,
 				8EC8C4F71DEDA1340044FB44 /* Utilities.swift */,
 				8EC8C5031DEDB30D0044FB44 /* Assets.xcassets */,
 				8EC8C50B1DEDC0420044FB44 /* README.md */,
+				8EB6C7951DF93FD300225444 /* CreditCardForm.podspec */,
 			);
 			path = CreditCardForm;
 			sourceTree = "<group>";
@@ -162,7 +165,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC8C50A1DEDB5EA0044FB44 /* CreditCardForum.h in Headers */,
+				8EC8C50A1DEDB5EA0044FB44 /* CreditCardForm.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC8C5041DEDB30D0044FB44 /* Assets.xcassets in Resources */,
+				8EB6C7961DF93FD300225444 /* CreditCardForm.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +333,7 @@
 				8EC8C50C1DEDC0420044FB44 /* README.md in Sources */,
 				8EC8C4FE1DEDA1340044FB44 /* AKMaskFieldUtility.swift in Sources */,
 				8EC8C4FC1DEDA1340044FB44 /* AKMaskFieldPatternCharacter.swift in Sources */,
-				8EC8C4FF1DEDA1340044FB44 /* CreditCardForumView.swift in Sources */,
+				8EC8C4FF1DEDA1340044FB44 /* CreditCardFormView.swift in Sources */,
 				8EC8C4FD1DEDA1340044FB44 /* AKMaskFieldStatus.swift in Sources */,
 				8EC8C4FB1DEDA1340044FB44 /* AKMaskFieldEvent.swift in Sources */,
 			);

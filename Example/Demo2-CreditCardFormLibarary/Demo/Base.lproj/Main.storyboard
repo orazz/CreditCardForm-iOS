@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmq-MN-l9m" customClass="CreditCardForumView" customModule="CreditCardForm">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmq-MN-l9m" customClass="CreditCardFormView" customModule="CreditCardForm">
                                 <rect key="frame" x="37" y="40" width="300" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Dtv-v3-OcS"/>

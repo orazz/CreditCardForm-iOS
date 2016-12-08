@@ -13,7 +13,7 @@ public enum Brands : String {
 }
 
 @IBDesignable
-public class CreditCardForumView : UIView {
+public class CreditCardFormView : UIView {
     
     fileprivate var cardView: UIView    = UIView(frame: .zero)
     fileprivate var backView: UIView    = UIView(frame: .zero)
@@ -23,7 +23,7 @@ public class CreditCardForumView : UIView {
     
     fileprivate var backImage: UIImageView   = UIImageView(frame: .zero)
     fileprivate var brandImageView           = UIImageView(frame: .zero)
-    fileprivate var cardNumber:AKMaskField        = AKMaskField(frame: .zero)
+    fileprivate var cardNumber:AKMaskField   = AKMaskField(frame: .zero)
     fileprivate var cardHolderText:UILabel   = UILabel(frame: .zero)
     fileprivate var cardHolder:UILabel       = UILabel(frame: .zero)
     fileprivate var expireDate: AKMaskField  = AKMaskField(frame: .zero)
@@ -405,7 +405,7 @@ public class CreditCardForumView : UIView {
 }
 
 //: CardColors
-extension CreditCardForumView {
+extension CreditCardFormView {
     
     fileprivate func setBrandColors() {
         colors[Brands.NONE.rawValue] = [UIColor.hexStr(hexStr: "#363434", alpha: 1), UIColor.hexStr(hexStr: "#363434", alpha: 1)]
