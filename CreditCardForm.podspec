@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CreditCardForm"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "CreditCardForm is iOS framework"
 
   s.description  = "CreditCardForm is iOS framework that allows developers to create the UI which replicates an actual Credit Card"
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "CreditCardForm/Classes/*.swift"
   s.resource_bundles = {
-    'CreditCardForm' => ['CreditCardForm/Assets.xcassets']
+    'CreditCardForm' => ['CreditCardForm/Assets/Assets.xcassets']
   }
   s.frameworks = 'UIKit'
 end

@@ -67,7 +67,7 @@ public class CreditCardFormView : UIView {
     }
     
     @IBInspectable
-    public var chipImage = UIImage(named: "chip") {
+    public var chipImage = UIImage(named: "chip", in: Bundle(for: CreditCardFormView.self), compatibleWith: nil) {
         didSet {
             chipImg.image = chipImage
         }
@@ -116,6 +116,7 @@ public class CreditCardFormView : UIView {
         createBackView()
         createBackLine()
         createCVC()
+     
     }
     
     private func setGradientBackground(v: UIView, top: CGColor, bottom: CGColor) {
@@ -131,7 +132,7 @@ public class CreditCardFormView : UIView {
     private func createCardView() {
         cardView.translatesAutoresizingMaskIntoConstraints = false
         cardView.layer.cornerRadius = 6
-        cardView.backgroundColor = .red
+        cardView.backgroundColor = .clear
         self.addSubview(cardView)
         //CardView
         self.addConstraint(NSLayoutConstraint(item: cardView, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 0.0));
@@ -374,7 +375,7 @@ public class CreditCardFormView : UIView {
             
             // Visa, Mastercard, Amex etc.
             if let name = colors[type.name] {
-                self.brandImageView.image = UIImage(named: type.name)
+                self.brandImageView.image = UIImage(named: type.name, in: Bundle(for: CreditCardFormView.self), compatibleWith: nil)
                 setType(colors: [name[0], name[1]], alpha: 1, back: name[0])
             }else{
                 setType(colors: [self.colors["DEFAULT"]![0], self.colors["DEFAULT"]![0]], alpha: 1, back: self.colors["DEFAULT"]![0])
@@ -402,6 +403,7 @@ public class CreditCardFormView : UIView {
             showingBack = false
         }
     }
+    
 }
 
 //: CardColors
@@ -418,3 +420,5 @@ extension CreditCardFormView {
         colors[Brands.DEFAULT.rawValue] = [UIColor.hexStr(hexStr: "#5D8BF2", alpha: 1), UIColor.hexStr(hexStr: "#3545AE", alpha: 1)]
     }
 }
+
+

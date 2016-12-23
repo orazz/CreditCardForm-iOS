@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5639844A00E3E6E670C48111 /* Pods_CreditCardFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B58AD822FD99C8D36962BC8 /* Pods_CreditCardFormTests.framework */; };
+		8E1A80401E0D0F8F00CB5C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A803E1E0D0F2500CB5C23 /* Assets.xcassets */; };
+		8E1A80651E0D216A00CB5C23 /* Visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A80641E0D216A00CB5C23 /* Visa.png */; };
+		8E1A80681E0D21B800CB5C23 /* chip.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A80671E0D21B800CB5C23 /* chip.png */; };
+		8E1A80731E0D33C800CB5C23 /* Amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A80721E0D33C800CB5C23 /* Amex.png */; };
+		8E1A80751E0D33D300CB5C23 /* Diners Club.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A80741E0D33D300CB5C23 /* Diners Club.png */; };
+		8E1A80771E0D33E000CB5C23 /* Discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A80761E0D33E000CB5C23 /* Discover.png */; };
+		8E1A80791E0D33EF00CB5C23 /* JCB.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A80781E0D33EF00CB5C23 /* JCB.png */; };
+		8E1A807B1E0D33FC00CB5C23 /* Mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A807A1E0D33FC00CB5C23 /* Mastercard.png */; };
 		8EB6C7961DF93FD300225444 /* CreditCardForm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8EB6C7951DF93FD300225444 /* CreditCardForm.podspec */; };
 		8EC8C3D31DEC8C3E0044FB44 /* CreditCardForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC8C3C91DEC8C3E0044FB44 /* CreditCardForm.framework */; };
 		8EC8C3D81DEC8C3E0044FB44 /* CreditCardFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C3D71DEC8C3E0044FB44 /* CreditCardFormTests.swift */; };
@@ -22,7 +30,6 @@
 		8EC8C5001DEDA1340044FB44 /* CreditCardValidationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F51DEDA1340044FB44 /* CreditCardValidationType.swift */; };
 		8EC8C5011DEDA1340044FB44 /* CreditCardValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F61DEDA1340044FB44 /* CreditCardValidator.swift */; };
 		8EC8C5021DEDA1340044FB44 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F71DEDA1340044FB44 /* Utilities.swift */; };
-		8EC8C5041DEDB30D0044FB44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8C5031DEDB30D0044FB44 /* Assets.xcassets */; };
 		8EC8C50A1DEDB5EA0044FB44 /* CreditCardForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC8C5091DEDB5EA0044FB44 /* CreditCardForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8EC8C50C1DEDC0420044FB44 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C50B1DEDC0420044FB44 /* README.md */; };
 /* End PBXBuildFile section */
@@ -42,6 +49,14 @@
 		5B58AD822FD99C8D36962BC8 /* Pods_CreditCardFormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardFormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D88D4003675FFBE5B168C26 /* Pods-CreditCardFormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardFormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardFormTests/Pods-CreditCardFormTests.release.xcconfig"; sourceTree = "<group>"; };
 		896DC78929C1F339B7C737C9 /* Pods-CreditCardForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardForm/Pods-CreditCardForm.release.xcconfig"; sourceTree = "<group>"; };
+		8E1A803E1E0D0F2500CB5C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
+		8E1A80641E0D216A00CB5C23 /* Visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Visa.png; path = Assets/Assets.xcassets/Visa.imageset/Visa.png; sourceTree = "<group>"; };
+		8E1A80671E0D21B800CB5C23 /* chip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chip.png; path = Assets/Assets.xcassets/chip.imageset/chip.png; sourceTree = "<group>"; };
+		8E1A80721E0D33C800CB5C23 /* Amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Amex.png; path = Assets/Assets.xcassets/Amex.imageset/Amex.png; sourceTree = "<group>"; };
+		8E1A80741E0D33D300CB5C23 /* Diners Club.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Diners Club.png"; path = "Assets/Assets.xcassets/Diners Club.imageset/Diners Club.png"; sourceTree = "<group>"; };
+		8E1A80761E0D33E000CB5C23 /* Discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Discover.png; path = Assets/Assets.xcassets/Discover.imageset/Discover.png; sourceTree = "<group>"; };
+		8E1A80781E0D33EF00CB5C23 /* JCB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = JCB.png; path = Assets/Assets.xcassets/JCB.imageset/JCB.png; sourceTree = "<group>"; };
+		8E1A807A1E0D33FC00CB5C23 /* Mastercard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mastercard.png; path = Assets/Assets.xcassets/Mastercard.imageset/Mastercard.png; sourceTree = "<group>"; };
 		8EB6C7951DF93FD300225444 /* CreditCardForm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CreditCardForm.podspec; sourceTree = SOURCE_ROOT; };
 		8EC8C3C91DEC8C3E0044FB44 /* CreditCardForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CreditCardForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC8C3CD1DEC8C3E0044FB44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
@@ -59,7 +74,6 @@
 		8EC8C4F51DEDA1340044FB44 /* CreditCardValidationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCardValidationType.swift; path = Classes/CreditCardValidationType.swift; sourceTree = "<group>"; };
 		8EC8C4F61DEDA1340044FB44 /* CreditCardValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditCardValidator.swift; path = Classes/CreditCardValidator.swift; sourceTree = "<group>"; };
 		8EC8C4F71DEDA1340044FB44 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Classes/Utilities.swift; sourceTree = "<group>"; };
-		8EC8C5031DEDB30D0044FB44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EC8C5091DEDB5EA0044FB44 /* CreditCardForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardForm.h; sourceTree = "<group>"; };
 		8EC8C50B1DEDC0420044FB44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		ADEDAE40183C8D1AA2D6877F /* Pods_CreditCardForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +109,20 @@
 				5D88D4003675FFBE5B168C26 /* Pods-CreditCardFormTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E1A807C1E0D340500CB5C23 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8E1A80641E0D216A00CB5C23 /* Visa.png */,
+				8E1A80671E0D21B800CB5C23 /* chip.png */,
+				8E1A80721E0D33C800CB5C23 /* Amex.png */,
+				8E1A80741E0D33D300CB5C23 /* Diners Club.png */,
+				8E1A80761E0D33E000CB5C23 /* Discover.png */,
+				8E1A80781E0D33EF00CB5C23 /* JCB.png */,
+				8E1A807A1E0D33FC00CB5C23 /* Mastercard.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		8EC8C3BF1DEC8C3E0044FB44 = {
@@ -133,7 +161,8 @@
 				8EC8C4F51DEDA1340044FB44 /* CreditCardValidationType.swift */,
 				8EC8C4F61DEDA1340044FB44 /* CreditCardValidator.swift */,
 				8EC8C4F71DEDA1340044FB44 /* Utilities.swift */,
-				8EC8C5031DEDB30D0044FB44 /* Assets.xcassets */,
+				8E1A803E1E0D0F2500CB5C23 /* Assets.xcassets */,
+				8E1A807C1E0D340500CB5C23 /* Images */,
 				8EC8C50B1DEDC0420044FB44 /* README.md */,
 				8EB6C7951DF93FD300225444 /* CreditCardForm.podspec */,
 			);
@@ -223,7 +252,6 @@
 				TargetAttributes = {
 					8EC8C3C81DEC8C3E0044FB44 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 683U48NZTT;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -257,8 +285,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC8C5041DEDB30D0044FB44 /* Assets.xcassets in Resources */,
+				8E1A80651E0D216A00CB5C23 /* Visa.png in Resources */,
+				8E1A80791E0D33EF00CB5C23 /* JCB.png in Resources */,
+				8E1A80771E0D33E000CB5C23 /* Discover.png in Resources */,
+				8E1A80401E0D0F8F00CB5C23 /* Assets.xcassets in Resources */,
+				8E1A80731E0D33C800CB5C23 /* Amex.png in Resources */,
 				8EB6C7961DF93FD300225444 /* CreditCardForm.podspec in Resources */,
+				8E1A80681E0D21B800CB5C23 /* chip.png in Resources */,
+				8E1A807B1E0D33FC00CB5C23 /* Mastercard.png in Resources */,
+				8E1A80751E0D33D300CB5C23 /* Diners Club.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,13 +499,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 683U48NZTT;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orazz.CreditCardForm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,13 +522,13 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 683U48NZTT;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orazz.CreditCardForm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
