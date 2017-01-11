@@ -80,6 +80,33 @@ public class CreditCardFormView : UIView {
         }
     }
     
+    @IBInspectable
+    public var expireDatePlaceholderText = "EXPIRY" {
+        didSet {
+            expireDateText.text = expireDatePlaceholderText
+        }
+    }
+    
+    @IBInspectable
+    public var cardNumberMaskExpression = "{....} {....} {....} {....}" {
+        didSet {
+            cardNumber.maskExpression = cardNumberMaskExpression
+        }
+    }
+    
+    @IBInspectable
+    public var cardNumberMaskTemplate = "**** **** **** ****" {
+        didSet {
+            cardNumber.maskTemplate = cardNumberMaskTemplate
+        }
+    }
+    
+    public var cardNumberFontSize: CGFloat = 20 {
+        didSet {
+            cardNumber.font = UIFont(name: "Helvetica Neue", size: cardNumberFontSize)
+        }
+    }
+    
     public override init(frame: CGRect) {
         super.init(frame: frame)
         createViews()
@@ -210,11 +237,12 @@ public class CreditCardFormView : UIView {
     private func createCardNumber() {
         //Credit card number
         cardNumber.translatesAutoresizingMaskIntoConstraints = false
-        cardNumber.maskExpression = "{....} {....} {....} {....}"
+        cardNumber.maskExpression = cardNumberMaskExpression
+        cardNumber.maskTemplate = cardNumberMaskTemplate
         cardNumber.textColor = cardHolderExpireDateColor
         cardNumber.isUserInteractionEnabled = false
         cardNumber.textAlignment = NSTextAlignment.center
-        cardNumber.font = UIFont(name: "Helvetica Neue", size: 20)
+        cardNumber.font = UIFont(name: "Helvetica Neue", size: cardNumberFontSize)
         frontView.addSubview(cardNumber)
         
         self.addConstraint(NSLayoutConstraint(item: cardNumber, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: cardView, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0.0));
@@ -271,7 +299,7 @@ public class CreditCardFormView : UIView {
         //Expire Date Text
         expireDateText.translatesAutoresizingMaskIntoConstraints = false
         expireDateText.font = UIFont(name: "Helvetica Neue", size: 10)
-        expireDateText.text = "EXPIRY"
+        expireDateText.text = expireDatePlaceholderText
         expireDateText.textColor = cardHolderExpireDateTextColor
         frontView.addSubview(expireDateText)
         
@@ -384,7 +412,6 @@ public class CreditCardFormView : UIView {
     }
     
     public func paymentCardTextFieldDidEndEditingExpiration(expirationYear: UInt) {
-        
         if "\(expirationYear)".characters.count <= 1 {
             expireDate.text = "MM/YY"
         }
@@ -410,7 +437,7 @@ public class CreditCardFormView : UIView {
 extension CreditCardFormView {
     
     fileprivate func setBrandColors() {
-        colors[Brands.NONE.rawValue] = [UIColor.hexStr(hexStr: "#363434", alpha: 1), UIColor.hexStr(hexStr: "#363434", alpha: 1)]
+        colors[Brands.NONE.rawValue] = [defaultCardColor, defaultCardColor]
         colors[Brands.Visa.rawValue] = [UIColor.hexStr(hexStr: "#5D8BF2", alpha: 1), UIColor.hexStr(hexStr: "#3545AE", alpha: 1)]
         colors[Brands.MasterCard.rawValue] = [UIColor.hexStr(hexStr: "#ED495A", alpha: 1), UIColor.hexStr(hexStr: "#8B1A2B", alpha: 1)]
         colors[Brands.Amex.rawValue] = [UIColor.hexStr(hexStr: "#005B9D", alpha: 1), UIColor.hexStr(hexStr: "#132972", alpha: 1)]
