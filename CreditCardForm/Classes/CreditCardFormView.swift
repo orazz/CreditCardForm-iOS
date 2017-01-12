@@ -67,7 +67,7 @@ public class CreditCardFormView : UIView {
     }
     
     @IBInspectable
-    public var chipImage = UIImage(named: "chip", in: Bundle(for: CreditCardFormView.self), compatibleWith: nil) {
+    public var chipImage = UIImage(named: "chip", in: Bundle.currentBundle(), compatibleWith: nil) {
         didSet {
             chipImg.image = chipImage
         }
@@ -143,7 +143,6 @@ public class CreditCardFormView : UIView {
         createBackView()
         createBackLine()
         createCVC()
-     
     }
     
     private func setGradientBackground(v: UIView, top: CGColor, bottom: CGColor) {
@@ -403,7 +402,7 @@ public class CreditCardFormView : UIView {
             
             // Visa, Mastercard, Amex etc.
             if let name = colors[type.name] {
-                self.brandImageView.image = UIImage(named: type.name, in: Bundle(for: CreditCardFormView.self), compatibleWith: nil)
+                self.brandImageView.image = UIImage(named: type.name, in: Bundle.currentBundle(), compatibleWith: nil)
                 setType(colors: [name[0], name[1]], alpha: 1, back: name[0])
             }else{
                 setType(colors: [self.colors["DEFAULT"]![0], self.colors["DEFAULT"]![0]], alpha: 1, back: self.colors["DEFAULT"]![0])

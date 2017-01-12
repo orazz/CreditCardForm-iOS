@@ -24,3 +24,17 @@ extension UIColor {
         }
     }
 }
+
+extension Bundle {
+    /// Create a new Bundle instance for 'Image.xcassets'.
+    ///
+    /// - Returns: a new bundle which contains 'Image.xcassets'.
+    static func currentBundle() -> Bundle {
+        let bundle = Bundle(for: CreditCardFormView.self)
+        if let path = bundle.path(forResource: "CreditCardForm", ofType: "bundle") {
+            return Bundle(path: path)!
+        } else {
+            return bundle
+        }
+    }
+}
