@@ -3,5 +3,6 @@ language: objective-c
 podfile: Example/Demo2-CreditCardFormLibarary/Podfile
 before_install:
 - gem install cocoapods
+- pod repo update
 - pod install --project-directory=Example/Demo2-CreditCardFormLibarary/
 script: xcodebuild -workspace Example/Demo2-CreditCardFormLibarary/Demo.xcworkspace -scheme Demo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
