@@ -1,7 +1,7 @@
 # CreditCardForm
 
 [![CI Status](https://travis-ci.org/orazz/CreditCardForm-iOS.svg?branch=master)](https://travis-ci.org/orazz/CreditCardForm-iOS)
-<a href="https://cocoapods.org/pods/CreditCardForm"><img src="https://img.shields.io/badge/pod-0.1.0-blue.svg" alt="CocoaPods compatible" /></a>
+<a href="https://cocoapods.org/pods/CreditCardForm"><img src="https://img.shields.io/badge/pod-0.1.1-blue.svg" alt="CocoaPods compatible" /></a>
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat" alt="Swift 3 compatible" /></a>
 <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
@@ -102,11 +102,13 @@ paymentTextField.heightAnchor.constraint(equalToConstant: 44)
 ])
 ```
 
-#### Optional - Delegate Methods
+#### Delegate Methods
 
 In order to use the delegate methods first set the delegate of Stripe to the parent view controller when setting it up
 
+``` swift
 paymentTextField.delegate = self
+```
 
 After that you will be able to set up the following delegate methods inside of your parent view controller
 
@@ -154,7 +156,7 @@ creditCardForm.chipImage (UIImage)
 creditCardForm.cardHolderString (String)
 creditCardForm.expireDatePlaceholderText (String)
 ```
-**Card number: [Configuring the Mask Field](https://github.com/artemkrachulov/AKMaskField#configuring-the-mask-field) **
+**Card number: [Configuring the Mask Field](https://github.com/artemkrachulov/AKMaskField#configuring-the-mask-field)**
 ``` swift
 creditCardForm.cardNumberMaskExpression (String)
 creditCardForm.cardNumberMaskTemplate (String)
