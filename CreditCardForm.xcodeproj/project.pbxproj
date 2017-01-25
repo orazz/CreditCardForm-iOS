@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5639844A00E3E6E670C48111 /* Pods_CreditCardFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B58AD822FD99C8D36962BC8 /* Pods_CreditCardFormTests.framework */; };
+		8E1A520B1E7BF24500F02033 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A520A1E7BF24500F02033 /* LICENSE */; };
 		8EB6C7961DF93FD300225444 /* CreditCardForm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8EB6C7951DF93FD300225444 /* CreditCardForm.podspec */; };
 		8EC8C3D31DEC8C3E0044FB44 /* CreditCardForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC8C3C91DEC8C3E0044FB44 /* CreditCardForm.framework */; };
 		8EC8C3D81DEC8C3E0044FB44 /* CreditCardFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C3D71DEC8C3E0044FB44 /* CreditCardFormTests.swift */; };
@@ -42,6 +43,7 @@
 		5B58AD822FD99C8D36962BC8 /* Pods_CreditCardFormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardFormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D88D4003675FFBE5B168C26 /* Pods-CreditCardFormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardFormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardFormTests/Pods-CreditCardFormTests.release.xcconfig"; sourceTree = "<group>"; };
 		896DC78929C1F339B7C737C9 /* Pods-CreditCardForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardForm/Pods-CreditCardForm.release.xcconfig"; sourceTree = "<group>"; };
+		8E1A520A1E7BF24500F02033 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		8EB6C7951DF93FD300225444 /* CreditCardForm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CreditCardForm.podspec; sourceTree = SOURCE_ROOT; };
 		8EC8C3C91DEC8C3E0044FB44 /* CreditCardForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CreditCardForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC8C3CD1DEC8C3E0044FB44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				8EC8C4F61DEDA1340044FB44 /* CreditCardValidator.swift */,
 				8EC8C4F71DEDA1340044FB44 /* Utilities.swift */,
 				8EFED2801E2796A6002BE8D5 /* Images.xcassets */,
+				8E1A520A1E7BF24500F02033 /* LICENSE */,
 				8EC8C50B1DEDC0420044FB44 /* README.md */,
 				8EB6C7951DF93FD300225444 /* CreditCardForm.podspec */,
 			);
@@ -256,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1A520B1E7BF24500F02033 /* LICENSE in Resources */,
 				8EFED2811E2796A6002BE8D5 /* Images.xcassets in Resources */,
 				8EB6C7961DF93FD300225444 /* CreditCardForm.podspec in Resources */,
 			);

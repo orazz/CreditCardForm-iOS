@@ -81,6 +81,13 @@ public class CreditCardFormView : UIView {
     }
     
     @IBInspectable
+    public var cardHolderPlaceholderString = "CARD HOLDER" {
+        didSet {
+            cardHolderText.text = cardHolderPlaceholderString
+        }
+    }
+    
+    @IBInspectable
     public var expireDatePlaceholderText = "EXPIRY" {
         didSet {
             expireDateText.text = expireDatePlaceholderText
@@ -270,7 +277,7 @@ public class CreditCardFormView : UIView {
         //Card holder uilabel
         cardHolderText.translatesAutoresizingMaskIntoConstraints = false
         cardHolderText.font = UIFont(name: "Helvetica Neue", size: 10)
-        cardHolderText.text = "CARD HOLDER"
+        cardHolderText.text = cardHolderPlaceholderString
         cardHolderText.textColor = cardHolderExpireDateTextColor
         frontView.addSubview(cardHolderText)
         
