@@ -399,7 +399,7 @@ public class CreditCardFormView : UIView {
         
         if (cardNumber?.characters.count)! >= 7 || (cardNumber?.characters.count)! < 4 {
             
-            guard let type = v.type(from: "\(cardNumber)") else {
+            guard let type = v.type(from: "\(cardNumber as String?)") else {
                 self.brandImageView.image = nil
                 if let name = colors["NONE"] {
                     setType(colors: [name[0], name[1]], alpha: 0.5, back: name[0])

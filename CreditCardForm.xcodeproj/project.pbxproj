@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5639844A00E3E6E670C48111 /* Pods_CreditCardFormTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B58AD822FD99C8D36962BC8 /* Pods_CreditCardFormTests.framework */; };
 		8E1A520B1E7BF24500F02033 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A520A1E7BF24500F02033 /* LICENSE */; };
+		8E68F4E01E98C9690086D6F3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8EC8C50B1DEDC0420044FB44 /* README.md */; };
 		8EB6C7961DF93FD300225444 /* CreditCardForm.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 8EB6C7951DF93FD300225444 /* CreditCardForm.podspec */; };
 		8EC8C3D31DEC8C3E0044FB44 /* CreditCardForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC8C3C91DEC8C3E0044FB44 /* CreditCardForm.framework */; };
 		8EC8C3D81DEC8C3E0044FB44 /* CreditCardFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C3D71DEC8C3E0044FB44 /* CreditCardFormTests.swift */; };
@@ -24,7 +25,6 @@
 		8EC8C5011DEDA1340044FB44 /* CreditCardValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F61DEDA1340044FB44 /* CreditCardValidator.swift */; };
 		8EC8C5021DEDA1340044FB44 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C4F71DEDA1340044FB44 /* Utilities.swift */; };
 		8EC8C50A1DEDB5EA0044FB44 /* CreditCardForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC8C5091DEDB5EA0044FB44 /* CreditCardForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EC8C50C1DEDC0420044FB44 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8EC8C50B1DEDC0420044FB44 /* README.md */; };
 		8EFED2811E2796A6002BE8D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFED2801E2796A6002BE8D5 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -259,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E68F4E01E98C9690086D6F3 /* README.md in Resources */,
 				8E1A520B1E7BF24500F02033 /* LICENSE in Resources */,
 				8EFED2811E2796A6002BE8D5 /* Images.xcassets in Resources */,
 				8EB6C7961DF93FD300225444 /* CreditCardForm.podspec in Resources */,
@@ -333,7 +334,6 @@
 				8EC8C4F81DEDA1340044FB44 /* AKMaskField.swift in Sources */,
 				8EC8C5011DEDA1340044FB44 /* CreditCardValidator.swift in Sources */,
 				8EC8C4FA1DEDA1340044FB44 /* AKMaskFieldBlockCharacter.swift in Sources */,
-				8EC8C50C1DEDC0420044FB44 /* README.md in Sources */,
 				8EC8C4FE1DEDA1340044FB44 /* AKMaskFieldUtility.swift in Sources */,
 				8EC8C4FC1DEDA1340044FB44 /* AKMaskFieldPatternCharacter.swift in Sources */,
 				8EC8C4FF1DEDA1340044FB44 /* CreditCardFormView.swift in Sources */,
@@ -464,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B7863481DD4CAE604473C3D /* Pods-CreditCardForm.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -487,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 896DC78929C1F339B7C737C9 /* Pods-CreditCardForm.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
