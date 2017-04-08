@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files  = "CreditCardForm/Classes/*.swift"
+  s.source_files  = "CreditCardForm/Classes/*.swift", "CreditCardForm/*.{h,m}"
   s.resource_bundles = {
     'CreditCardForm' => ['CreditCardForm/Images.xcassets']
   }
