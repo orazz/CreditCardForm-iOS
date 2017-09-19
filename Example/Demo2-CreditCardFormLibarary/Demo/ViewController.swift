@@ -46,7 +46,7 @@ class ViewController: UIViewController, STPPaymentCardTextFieldDelegate {
     }
 
     func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
-        creditCardView.paymentCardTextFieldDidChange(cardNumber: textField.cardNumber, expirationYear: textField.expirationYear, expirationMonth: textField.expirationYear, cvc: textField.cvc)
+        creditCardView.paymentCardTextFieldDidChange(cardNumber: textField.cardNumber, expirationYear: textField.expirationYear, expirationMonth: textField.expirationMonth, cvc: textField.cvc)
     }
     
     func paymentCardTextFieldDidEndEditingExpiration(_ textField: STPPaymentCardTextField) {
