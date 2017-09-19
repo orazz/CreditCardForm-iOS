@@ -114,7 +114,7 @@ After that you will be able to set up the following delegate methods inside of y
 
 ``` swift
 func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
-creditCardForm.paymentCardTextFieldDidChange(cardNumber: textField.cardNumber, expirationYear: textField.expirationYear, expirationMonth: textField.expirationYear, cvc: textField.cvc)
+creditCardForm.paymentCardTextFieldDidChange(cardNumber: textField.cardNumber, expirationYear: textField.expirationYear, expirationMonth: textField.expirationMonth, cvc: textField.cvc)
 }
 
 func paymentCardTextFieldDidEndEditingExpiration(_ textField: STPPaymentCardTextField) {
