@@ -397,7 +397,7 @@ public class CreditCardFormView : UIView {
         let v = CreditCardValidator()
         self.cvc.text = cvc
         
-        if (cardNumber?.characters.count)! >= 7 || (cardNumber?.characters.count)! < 4 {
+        if (cardNumber?.count)! >= 7 || (cardNumber?.count)! < 4 {
             
             guard let type = v.type(from: "\(cardNumber as String?)") else {
                 self.brandImageView.image = nil
@@ -418,7 +418,7 @@ public class CreditCardFormView : UIView {
     }
     
     public func paymentCardTextFieldDidEndEditingExpiration(expirationYear: UInt) {
-        if "\(expirationYear)".characters.count <= 1 {
+        if "\(expirationYear)".count <= 1 {
             expireDate.text = "MM/YY"
         }
     }

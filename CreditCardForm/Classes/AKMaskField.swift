@@ -152,10 +152,10 @@ open class AKMaskField: UITextField {
       var copy: Bool = true
       var _maskTemplate = String(maskTemplateDefault)
 
-      if maskTemplate.characters.count == maskExpression!.characters.count - (maskBlocks.count * 2) {
+      if maskTemplate.count == maskExpression!.count - (maskBlocks.count * 2) {
         copy = false
         _maskTemplate = maskTemplate
-      } else if maskTemplate.characters.count == 1 {
+      } else if maskTemplate.count == 1 {
          _maskTemplate = maskTemplate
       }
 
@@ -207,7 +207,7 @@ open class AKMaskField: UITextField {
         return
       }
       
-      _ = textField(self, shouldChangeCharactersIn: NSMakeRange(0, maskText.characters.count), replacementString: text ?? "")
+      _ = textField(self, shouldChangeCharactersIn: NSMakeRange(0, maskText.count), replacementString: text ?? "")
     }
   }
   
@@ -421,8 +421,8 @@ extension AKMaskField: UITextFieldDelegate {
     var location      = range.location
     var savedLocation = range.location
     
-    for replacementCharacter in string.characters {
-      if location == maskText?.characters.count { break }
+    for replacementCharacter in string {
+      if location == maskText?.count { break }
 
       // Find next character
       // If character outside the block, jump to first character of the next block
@@ -511,7 +511,7 @@ extension AKMaskField: UITextFieldDelegate {
             // Start carret position
             var _location = _range.location
             
-            for replacementCharacter in _string.characters {
+            for replacementCharacter in _string {
               if _location > maskBlocks[i].templateRange.length { break }
 
               if matchTextCharacter(replacementCharacter, withMaskCharacter: maskBlocks[i].chars[_location]) {
@@ -533,7 +533,7 @@ extension AKMaskField: UITextFieldDelegate {
           
           if !_string.isEmpty {
             
-            var maskTextRange = NSMakeRange(_range.location, _string.characters.count)
+            var maskTextRange = NSMakeRange(_range.location, _string.count)
             
             // Object
 
