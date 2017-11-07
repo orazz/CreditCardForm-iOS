@@ -1,15 +1,15 @@
 PODS:
-  - CreditCardForm (0.1.0)
-  - Stripe (9.3.0)
+  - CreditCardForm (0.1.4)
+  - Stripe (11.4.0)
 
 DEPENDENCIES:
-  - CreditCardForm (~> 0.1)
+  - CreditCardForm
   - Stripe
 
 SPEC CHECKSUMS:
-  CreditCardForm: caa6d61c8871491b6c00fff4727a7e3e9c6f152d
-  Stripe: 0f41a33a6fa3ac76ee668d7df3e2680c28b8ab1a
+  CreditCardForm: 29bf8f9af0463c99c7cb88a88d2412f5d1c91cca
+  Stripe: dc8396620ab86a36221fc8df72ba9f5d317d174c
 
-PODFILE CHECKSUM: 95be17c9b432faf659ad658b01c3bc0d9a2cd22b
+PODFILE CHECKSUM: 1a6c9313c16f64ab5b276822f7a971ccea3a5116
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.3.1

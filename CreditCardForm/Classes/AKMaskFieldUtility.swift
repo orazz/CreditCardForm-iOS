@@ -39,7 +39,11 @@ class AKMaskFieldUtility {
     guard let sourceString = sourceString else {
       return ""
     }
+    #if swift(>=4)
+    return sourceString[rangeFromString(sourceString, nsRange: range)]
+    #else
     return sourceString.substring(with: rangeFromString(sourceString, nsRange: range))
+    #endif
   }
   
   class func replace(_ sourceString: inout String!, withString string: String, inRange range: NSRange) {
