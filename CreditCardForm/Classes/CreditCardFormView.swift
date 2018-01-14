@@ -31,6 +31,7 @@ public class CreditCardFormView : UIView {
     fileprivate var backLine: UIView         = UIView(frame: .zero)
     fileprivate var cvc: AKMaskField         = AKMaskField(frame: .zero)
     fileprivate var chipImg: UIImageView     = UIImageView(frame: .zero)
+    fileprivate var amex                    = false
     
     public var colors = [String : [UIColor]]()
     
@@ -396,7 +397,10 @@ public class CreditCardFormView : UIView {
         }
         let v = CreditCardValidator()
         self.cvc.text = cvc
-        
+        if (cardNumber!.count <= 1)
+        {
+            self.cardNumber.maskExpression = "{....} {....} {....} {....}"
+        }
         if (cardNumber?.count)! >= 7 || (cardNumber?.count)! < 4 {
             
             guard let type = v.type(from: "\(cardNumber as String?)") else {
@@ -409,6 +413,15 @@ public class CreditCardFormView : UIView {
             
             // Visa, Mastercard, Amex etc.
             if let name = colors[type.name] {
+                if(type.name.lowercased() == "amex".lowercased()){
+                    if !amex {
+                        self.cardNumber.maskExpression = "{....} {....} {....} {...}"
+                        amex = true
+                    }
+                }else {
+                    amex = false
+                }
+                
                 self.brandImageView.image = UIImage(named: type.name, in: Bundle.currentBundle(), compatibleWith: nil)
                 setType(colors: [name[0], name[1]], alpha: 1, back: name[0])
             }else{
