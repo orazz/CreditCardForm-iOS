@@ -397,13 +397,18 @@ public class CreditCardFormView : UIView {
         }
         let v = CreditCardValidator()
         self.cvc.text = cvc
-        if (cardNumber!.count <= 1)
+        
+        guard let cardN = cardNumber else {
+            return
+        }
+        
+        if (cardN.count == 0)
         {
             self.cardNumber.maskExpression = "{....} {....} {....} {....}"
         }
-        if (cardNumber?.count)! >= 7 || (cardNumber?.count)! < 4 {
+        if (cardN.count >= 7 || cardN.count < 4) {
             
-            guard let type = v.type(from: "\(cardNumber as String?)") else {
+            guard let type = v.type(from: "\(cardN as String?)") else {
                 self.brandImageView.image = nil
                 if let name = colors["NONE"] {
                     setType(colors: [name[0], name[1]], alpha: 0.5, back: name[0])
@@ -435,7 +440,7 @@ public class CreditCardFormView : UIView {
             expireDate.text = "MM/YY"
         }
     }
-
+    
     public func paymentCardTextFieldDidBeginEditingCVC() {
         if !showingBack {
             flip()

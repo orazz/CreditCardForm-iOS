@@ -40,7 +40,7 @@ class AKMaskFieldUtility {
       return ""
     }
     #if swift(>=4)
-    return sourceString[rangeFromString(sourceString, nsRange: range)]
+    return String(sourceString[rangeFromString(sourceString, nsRange: range)])
     #else
     return sourceString.substring(with: rangeFromString(sourceString, nsRange: range))
     #endif
