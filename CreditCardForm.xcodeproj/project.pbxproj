@@ -39,10 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B7863481DD4CAE604473C3D /* Pods-CreditCardForm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardForm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardForm/Pods-CreditCardForm.debug.xcconfig"; sourceTree = "<group>"; };
 		5B58AD822FD99C8D36962BC8 /* Pods_CreditCardFormTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardFormTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D88D4003675FFBE5B168C26 /* Pods-CreditCardFormTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardFormTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardFormTests/Pods-CreditCardFormTests.release.xcconfig"; sourceTree = "<group>"; };
-		896DC78929C1F339B7C737C9 /* Pods-CreditCardForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardForm.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardForm/Pods-CreditCardForm.release.xcconfig"; sourceTree = "<group>"; };
 		8E1A520A1E7BF24500F02033 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		8EB6C7951DF93FD300225444 /* CreditCardForm.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CreditCardForm.podspec; sourceTree = SOURCE_ROOT; };
 		8EC8C3C91DEC8C3E0044FB44 /* CreditCardForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CreditCardForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +62,6 @@
 		8EC8C50B1DEDC0420044FB44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		8EFED2801E2796A6002BE8D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ADEDAE40183C8D1AA2D6877F /* Pods_CreditCardForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CreditCardForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4314B94611DE7DC5707251A /* Pods-CreditCardFormTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditCardFormTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CreditCardFormTests/Pods-CreditCardFormTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +87,6 @@
 		0C6147D0872EBEC9D5306BAC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0B7863481DD4CAE604473C3D /* Pods-CreditCardForm.debug.xcconfig */,
-				896DC78929C1F339B7C737C9 /* Pods-CreditCardForm.release.xcconfig */,
-				E4314B94611DE7DC5707251A /* Pods-CreditCardFormTests.debug.xcconfig */,
-				5D88D4003675FFBE5B168C26 /* Pods-CreditCardFormTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -474,7 +466,6 @@
 		};
 		8EC8C3DE1DEC8C3E0044FB44 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B7863481DD4CAE604473C3D /* Pods-CreditCardForm.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -498,7 +489,6 @@
 		};
 		8EC8C3DF1DEC8C3E0044FB44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 896DC78929C1F339B7C737C9 /* Pods-CreditCardForm.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -521,7 +511,6 @@
 		};
 		8EC8C3E11DEC8C3E0044FB44 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4314B94611DE7DC5707251A /* Pods-CreditCardFormTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 683U48NZTT;
@@ -535,7 +524,6 @@
 		};
 		8EC8C3E21DEC8C3E0044FB44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D88D4003675FFBE5B168C26 /* Pods-CreditCardFormTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 683U48NZTT;
