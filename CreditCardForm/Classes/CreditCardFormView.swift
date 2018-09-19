@@ -9,7 +9,7 @@
 import UIKit
 
 public enum Brands : String {
-    case NONE, Visa, MasterCard, Amex, JCB, DEFAULT, Discover
+    case NONE, Visa, UnionPay, MasterCard, Amex, JCB, DEFAULT, Discover
 }
 
 @IBDesignable
@@ -415,7 +415,7 @@ public class CreditCardFormView : UIView {
                 }
                 return
             }
-            
+
             // Visa, Mastercard, Amex etc.
             if let name = colors[type.name] {
                 if(type.name.lowercased() == "amex".lowercased()){
@@ -426,7 +426,6 @@ public class CreditCardFormView : UIView {
                 }else {
                     amex = false
                 }
-                
                 self.brandImageView.image = UIImage(named: type.name, in: Bundle.currentBundle(), compatibleWith: nil)
                 setType(colors: [name[0], name[1]], alpha: 1, back: name[0])
             }else{
@@ -464,6 +463,7 @@ extension CreditCardFormView {
         colors[Brands.NONE.rawValue] = [defaultCardColor, defaultCardColor]
         colors[Brands.Visa.rawValue] = [UIColor.hexStr(hexStr: "#5D8BF2", alpha: 1), UIColor.hexStr(hexStr: "#3545AE", alpha: 1)]
         colors[Brands.MasterCard.rawValue] = [UIColor.hexStr(hexStr: "#ED495A", alpha: 1), UIColor.hexStr(hexStr: "#8B1A2B", alpha: 1)]
+        colors[Brands.UnionPay.rawValue] = [UIColor.hexStr(hexStr: "#987c00", alpha: 1), UIColor.hexStr(hexStr: "#826a01", alpha: 1)]
         colors[Brands.Amex.rawValue] = [UIColor.hexStr(hexStr: "#005B9D", alpha: 1), UIColor.hexStr(hexStr: "#132972", alpha: 1)]
         colors[Brands.JCB.rawValue] = [UIColor.hexStr(hexStr: "#265797", alpha: 1), UIColor.hexStr(hexStr: "#3d6eaa", alpha: 1)]
         colors["Diners Club"] = [UIColor.hexStr(hexStr: "#5b99d8", alpha: 1), UIColor.hexStr(hexStr: "#4186CD", alpha: 1)]
