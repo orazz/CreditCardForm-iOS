@@ -26,6 +26,7 @@ To run the example project, clone the repo, and run `pod install` from the Demo-
 - [x] Diners
 - [x] Discover
 - [x] Amex
+- [x] UnionPay
 
 ## Requirements
 
