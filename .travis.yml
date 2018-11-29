@@ -1,4 +1,4 @@
-osx_image: xcode10.0
+osx_image: xcode9.1
 language: objective-c
 podfile: Example/Demo2-CreditCardFormLibarary/Podfile
 before_install:

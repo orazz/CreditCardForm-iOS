@@ -646,9 +646,9 @@ extension AKMaskField: UITextFieldDelegate {
         print("   index           : \(char.index)")
         print("   blockIndex      : \(char.blockIndex)")
         print("   status          : \(char.status)")
-        print("   pattern         : \(String(describing: char.pattern))")
+        print("   pattern         : \(char.pattern)")
         print("   patternRange    : \(char.patternRange)")
-        print("   template        : \(String(describing: char.template))")
+        print("   template        : \(char.template)")
         print("   templateRange   : \(char.templateRange)")
       }
       print("")
