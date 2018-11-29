@@ -1,9 +1,9 @@
 # CreditCardForm
 
 [![CI Status](https://travis-ci.org/orazz/CreditCardForm-iOS.svg?branch=master)](https://travis-ci.org/orazz/CreditCardForm-iOS)
-<a href="https://cocoapods.org/pods/CreditCardForm"><img src="https://img.shields.io/badge/pod-0.1.8-blue.svg" alt="CocoaPods compatible" /></a>
+<a href="https://cocoapods.org/pods/CreditCardForm"><img src="https://img.shields.io/badge/pod-0.1.9-blue.svg" alt="CocoaPods compatible" /></a>
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
-<a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat" alt="Swift 3 compatible" /></a>
+<a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift4.2-compatible-4BC51D.svg?style=flat" alt="Swift 4.2 compatible" /></a>
 <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
 <a href="https://github.com/orazz/CreditCardForm-iOS/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=GSV5DLQRJ5AH2&lc=US&item_name=Oraz%20Atakishiyev&item_number=PageMenu&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
