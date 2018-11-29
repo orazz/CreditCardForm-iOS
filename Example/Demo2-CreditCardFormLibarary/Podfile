@@ -7,6 +7,6 @@ target 'Demo' do
 
   # Pods for Demo
   pod "Stripe"
- # pod 'CreditCardForm', :git => 'https://github.com/orazz/CreditCardForm-iOS', branch: 'master'
-  pod 'CreditCardForm'
+  pod 'CreditCardForm', :git => 'https://github.com/orazz/CreditCardForm-iOS', branch: 'master'
+  # pod 'CreditCardForm'
 end
