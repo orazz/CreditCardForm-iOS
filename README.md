@@ -171,7 +171,7 @@ We would love for you to contribute to **CreditCardForm**, check the ``LICENSE``
 
 ## Meta
 
-[Oraz Atakishi](https://github.com/orazz), orazz.tm@gmail.com
+[Oraz Atakishiyev](https://github.com/orazz), [orazz.com](https://orazz.com)
 
 #### 3rd party libraries
 
