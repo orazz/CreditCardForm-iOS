@@ -387,6 +387,10 @@ public class CreditCardFormView : UIView {
                           completion: nil)
     }
     
+    public func isAmex() -> Bool {
+        return self.amex
+    }
+    
     public func paymentCardTextFieldDidChange(cardNumber: String? = "", expirationYear: UInt, expirationMonth: UInt, cvc: String? = "") {
         self.cardNumber.text = cardNumber
         
