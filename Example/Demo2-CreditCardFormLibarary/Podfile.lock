@@ -1,5 +1,5 @@
 PODS:
-  - CreditCardForm (0.1.9.2)
+  - CreditCardForm (0.2.0)
   - Stripe (17.0.3)
 
 DEPENDENCIES:
@@ -17,11 +17,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   CreditCardForm:
-    :commit: 185678aaf16031e599cee01aed904055ca5619f2
+    :commit: dbafedcf6ecebb7d6c6b75d1f3bc8787a95e5b10
     :git: https://github.com/orazz/CreditCardForm-iOS
 
 SPEC CHECKSUMS:
-  CreditCardForm: 3b627d815eafc23ef3f79f22021b2f0f5e135e10
+  CreditCardForm: bba4aad545236f97f2dc45ea3bed0cb57d5e0e99
   Stripe: 30ba9a2ac7297e93de561fed695222ef980ee521
 
 PODFILE CHECKSUM: b70fd5f5c314cafe698f9253d5a630d5a098ec25
