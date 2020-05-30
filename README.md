@@ -2,7 +2,7 @@
 
 [![CI Status](https://travis-ci.org/orazz/CreditCardForm-iOS.svg?branch=master)](https://travis-ci.org/orazz/CreditCardForm-iOS)
 <a href="https://cocoapods.org/pods/CreditCardForm"><img
-src="https://img.shields.io/badge/pod-0.1.9-blue.svg" alt="CocoaPods compatible" /></a>
+src="https://img.shields.io/badge/pod-0.2.0-blue.svg" alt="CocoaPods compatible" /></a>
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift4.2-compatible-4BC51D.svg?style=flat" alt="Swift 4.2 compatible" /></a>
 <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
@@ -14,7 +14,7 @@ CreditCardForm is iOS framework that allows developers to create the UI which re
 <strong style="color:red">Fixed typo use CreditCardForm instead ~~CreditCardForum~~</strong>
 
 ### Screenshots
-<img src="https://dotjpg.co/aOI6.png" width="300"> <img src="Example/Screens/CreditCardDemo.gif" width="300">
+<img src="https://dotjpg.co/aOI6.png" width="300"> <img src="Example/Screens/dark.gif" width="300">
 
 ## Example
 
