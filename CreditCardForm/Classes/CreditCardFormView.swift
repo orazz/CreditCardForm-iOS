@@ -31,9 +31,26 @@ public class CreditCardFormView : UIView {
     fileprivate var backLine: UIView         = UIView(frame: .zero)
     fileprivate var cvc: AKMaskField         = AKMaskField(frame: .zero)
     fileprivate var chipImg: UIImageView     = UIImageView(frame: .zero)
-    fileprivate var amex                    = false
+    fileprivate var cvcAmexImageView: UIImageView     = UIImageView(frame: .zero)
+    fileprivate var amexCVC: AKMaskField     = AKMaskField(frame: .zero)
+    fileprivate var colors = [Brands.DEFAULT.rawValue: [
+        UIColor.hexStr(hexStr: "363434", alpha: 1),
+        UIColor.hexStr(hexStr: "363434", alpha: 1)]
+    ]
     
-    public var colors = [String : [UIColor]]()
+    fileprivate var cardNumberCenterXConstraint = NSLayoutConstraint()
+    fileprivate var amex = false {
+        didSet {
+            self.cardNumberCenterXConstraint.constant = (self.amex) ? -20 : 0.0
+            self.cvcAmexImageView.isHidden = !self.amex
+            self.amexCVC.isHidden = !self.amex
+            UIView.animate(withDuration: 0.5) {
+                self.cardView.layoutIfNeeded()
+            }
+        }
+    }
+    
+    public var cardGradientColors = [String : [UIColor]]()
     
     @IBInspectable
     public var defaultCardColor: UIColor = UIColor.hexStr(hexStr: "363434", alpha: 1) {
@@ -48,6 +65,7 @@ public class CreditCardFormView : UIView {
         didSet {
             cardHolderText.textColor = cardHolderExpireDateTextColor
             expireDateText.textColor = cardHolderExpireDateTextColor
+            amexCVC.textColor = cardHolderExpireDateColor
         }
     }
     
@@ -71,6 +89,13 @@ public class CreditCardFormView : UIView {
     public var chipImage = UIImage(named: "chip", in: Bundle.currentBundle(), compatibleWith: nil) {
         didSet {
             chipImg.image = chipImage
+        }
+    }
+    
+    @IBInspectable
+    public var cvcAmexImageName = UIImage(named: "amexCvc", in: Bundle.currentBundle(), compatibleWith: nil) {
+        didSet {
+            cvcAmexImageView.image = cvcAmexImageName
         }
     }
     
@@ -109,11 +134,9 @@ public class CreditCardFormView : UIView {
         }
     }
     
-    public var cardNumberFontSize: CGFloat = 20 {
-        didSet {
-            cardNumber.font = UIFont(name: "Helvetica Neue", size: cardNumberFontSize)
-        }
-    }
+    public var cardNumberFont: UIFont = UIFont(name: "HelveticaNeue", size: 20)!
+    public var cardPlaceholdersFont: UIFont = UIFont(name: "HelveticaNeue", size: 10)!
+    public var cardTextFont: UIFont = UIFont(name: "HelveticaNeue", size: 12)!
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -148,6 +171,7 @@ public class CreditCardFormView : UIView {
         createExpireDate()
         createExpireDateText()
         createChipImage()
+        createAmexCVC()
         createBackView()
         createBackLine()
         createCVC()
@@ -249,10 +273,11 @@ public class CreditCardFormView : UIView {
         cardNumber.textColor = cardHolderExpireDateColor
         cardNumber.isUserInteractionEnabled = false
         cardNumber.textAlignment = NSTextAlignment.center
-        cardNumber.font = UIFont(name: "Helvetica Neue", size: cardNumberFontSize)
+        cardNumber.font = cardNumberFont
         frontView.addSubview(cardNumber)
         
-        self.addConstraint(NSLayoutConstraint(item: cardNumber, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1.0, constant: 0.0));
+        cardNumberCenterXConstraint = NSLayoutConstraint(item: cardNumber, attribute: NSLayoutConstraint.Attribute.centerX, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.centerX, multiplier: 1.0, constant: 0)
+        self.addConstraint(cardNumberCenterXConstraint);
         
         self.addConstraint(NSLayoutConstraint(item: cardNumber, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1.0, constant: 0.0));
         
@@ -264,7 +289,7 @@ public class CreditCardFormView : UIView {
     private func createCardHolder() {
         //Name
         cardHolder.translatesAutoresizingMaskIntoConstraints = false
-        cardHolder.font = UIFont(name: "Helvetica Neue", size: 12)
+        cardHolder.font = cardTextFont
         cardHolder.textColor = cardHolderExpireDateColor
         cardHolder.text = cardHolderString
         frontView.addSubview(cardHolder)
@@ -272,12 +297,14 @@ public class CreditCardFormView : UIView {
         self.addConstraint(NSLayoutConstraint(item: cardHolder, attribute: NSLayoutConstraint.Attribute.bottom, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1.0, constant: -20));
         
         self.addConstraint(NSLayoutConstraint(item: cardHolder, attribute: NSLayoutConstraint.Attribute.leading, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1.0, constant: 15));
+        
+        self.addConstraint(NSLayoutConstraint(item: cardHolder, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.height, multiplier: 1.0, constant: 20));
     }
     
     private func createCardHolderText() {
         //Card holder uilabel
         cardHolderText.translatesAutoresizingMaskIntoConstraints = false
-        cardHolderText.font = UIFont(name: "Helvetica Neue", size: 10)
+        cardHolderText.font = cardPlaceholdersFont
         cardHolderText.text = cardHolderPlaceholderString
         cardHolderText.textColor = cardHolderExpireDateTextColor
         frontView.addSubview(cardHolderText)
@@ -291,7 +318,7 @@ public class CreditCardFormView : UIView {
         //Expire Date
         expireDate = AKMaskField()
         expireDate.translatesAutoresizingMaskIntoConstraints = false
-        expireDate.font = UIFont(name: "Helvetica Neue", size: 12)
+        expireDate.font = cardTextFont
         expireDate.maskExpression = "{..}/{..}"
         expireDate.text = "MM/YY"
         expireDate.textColor = cardHolderExpireDateColor
@@ -305,7 +332,7 @@ public class CreditCardFormView : UIView {
     private func createExpireDateText() {
         //Expire Date Text
         expireDateText.translatesAutoresizingMaskIntoConstraints = false
-        expireDateText.font = UIFont(name: "Helvetica Neue", size: 10)
+        expireDateText.font = cardPlaceholdersFont
         expireDateText.text = expireDatePlaceholderText
         expireDateText.textColor = cardHolderExpireDateTextColor
         frontView.addSubview(expireDateText)
@@ -313,6 +340,40 @@ public class CreditCardFormView : UIView {
         self.addConstraint(NSLayoutConstraint(item: expireDateText, attribute: NSLayoutConstraint.Attribute.bottom, relatedBy: NSLayoutConstraint.Relation.equal, toItem: expireDate, attribute: NSLayoutConstraint.Attribute.top, multiplier: 1.0, constant: -3));
         
         self.addConstraint(NSLayoutConstraint(item: expireDateText, attribute: NSLayoutConstraint.Attribute.trailing, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.trailing, multiplier: 1.0, constant: -58));
+    }
+    
+    private func createAmexCVC() {
+        
+        //Create Amex card cvc
+        amexCVC = AKMaskField()
+        amexCVC.translatesAutoresizingMaskIntoConstraints = false
+        amexCVC.font = cardTextFont
+        amexCVC.text = expireDatePlaceholderText
+        amexCVC.maskExpression = "{....}"
+        amexCVC.text = "***"
+        amexCVC.isHidden = true
+        frontView.addSubview(amexCVC)
+        
+        self.addConstraint(NSLayoutConstraint(item: amexCVC, attribute: NSLayoutConstraint.Attribute.trailing, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardView, attribute: NSLayoutConstraint.Attribute.trailing, multiplier: 1.0, constant: -23));
+        
+        self.addConstraint(NSLayoutConstraint(item: amexCVC, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: cardNumber, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1.0, constant: 15));
+        
+        self.addConstraint(NSLayoutConstraint(item: amexCVC, attribute: NSLayoutConstraint.Attribute.width, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.width, multiplier: 1.0, constant: 27));
+        
+        // Create amex cvc image
+        cvcAmexImageView.translatesAutoresizingMaskIntoConstraints = false
+        cvcAmexImageView.image = cvcAmexImageName
+        cvcAmexImageView.contentMode = ContentMode.scaleAspectFit
+        cvcAmexImageView.isHidden = true
+        frontView.addSubview(cvcAmexImageView)
+        
+        self.addConstraint(NSLayoutConstraint(item: cvcAmexImageView, attribute: NSLayoutConstraint.Attribute.trailing, relatedBy: NSLayoutConstraint.Relation.equal, toItem: amexCVC, attribute: NSLayoutConstraint.Attribute.leading, multiplier: 1.0, constant: -5));
+        
+        self.addConstraint(NSLayoutConstraint(item: cvcAmexImageView, attribute: NSLayoutConstraint.Attribute.centerY, relatedBy: NSLayoutConstraint.Relation.equal, toItem: amexCVC, attribute: NSLayoutConstraint.Attribute.centerY, multiplier: 1.0, constant: 0));
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:[view(==15)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": cvcAmexImageView]));
+
+        self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[view(==15)]", options: NSLayoutConstraint.FormatOptions(rawValue: 0), metrics: nil, views: ["view": cvcAmexImageView]));
+    
     }
     
     private func createChipImage() {
@@ -354,6 +415,9 @@ public class CreditCardFormView : UIView {
         cvc.backgroundColor = .white
         cvc.textAlignment = NSTextAlignment.center
         cvc.isUserInteractionEnabled = false
+        if #available(iOS 13.0, *) {
+            cvc.backgroundColor = UIColor.systemGray3
+        }
         backView.addSubview(cvc)
         
         self.addConstraint(NSLayoutConstraint(item: cvc, attribute: NSLayoutConstraint.Attribute.top, relatedBy: NSLayoutConstraint.Relation.equal, toItem: backLine, attribute: NSLayoutConstraint.Attribute.bottom, multiplier: 1.0, constant: 10));
@@ -391,16 +455,20 @@ public class CreditCardFormView : UIView {
         return self.amex
     }
     
-    public func paymentCardTextFieldDidChange(cardNumber: String? = "", expirationYear: UInt, expirationMonth: UInt, cvc: String? = "") {
+    public func paymentCardTextFieldDidChange(cardNumber: String? = "", expirationYear: UInt?, expirationMonth: UInt?, cvc: String? = "") {
         self.cardNumber.text = cardNumber
         
-        self.expireDate.text = NSString(format: "%02ld", expirationMonth) as String + "/" + (NSString(format: "%02ld", expirationYear) as String)
+        if let expireMonth = expirationMonth, let expireYear = expirationYear {
+            self.expireDate.text = NSString(format: "%02ld", expireMonth) as String + "/" + (NSString(format: "%02ld", expireYear) as String)
+        }
         
         if expirationMonth == 0 {
             expireDate.text = "MM/YY"
         }
+        
         let v = CreditCardValidator()
         self.cvc.text = cvc
+        self.amexCVC.text = cvc
         
         guard let cardN = cardNumber else {
             return
@@ -411,7 +479,7 @@ public class CreditCardFormView : UIView {
             self.cardNumber.maskExpression = "{....} {....} {....} {....}"
         }
         if (cardN.count >= 7 || cardN.count < 4) {
-            
+            amex = false
             guard let type = v.type(from: "\(cardN as String?)") else {
                 self.brandImageView.image = nil
                 if let name = colors["NONE"] {
@@ -419,20 +487,19 @@ public class CreditCardFormView : UIView {
                 }
                 return
             }
-
+            
             // Visa, Mastercard, Amex etc.
             if let name = colors[type.name] {
                 if(type.name.lowercased() == "amex".lowercased()){
                     if !amex {
                         self.cardNumber.maskExpression = "{....} {....} {....} {...}"
+                        self.cardNumber.text = cardNumber
                         amex = true
                     }
-                }else {
-                    amex = false
                 }
                 self.brandImageView.image = UIImage(named: type.name, in: Bundle.currentBundle(), compatibleWith: nil)
                 setType(colors: [name[0], name[1]], alpha: 1, back: name[0])
-            }else{
+            } else {
                 setType(colors: [self.colors["DEFAULT"]![0], self.colors["DEFAULT"]![0]], alpha: 1, back: self.colors["DEFAULT"]![0])
             }
         }
@@ -446,8 +513,10 @@ public class CreditCardFormView : UIView {
     
     public func paymentCardTextFieldDidBeginEditingCVC() {
         if !showingBack {
-            flip()
-            showingBack = true
+            if !amex {
+                flip()
+                showingBack = true
+            }
         }
     }
     
@@ -473,6 +542,12 @@ extension CreditCardFormView {
         colors["Diners Club"] = [UIColor.hexStr(hexStr: "#5b99d8", alpha: 1), UIColor.hexStr(hexStr: "#4186CD", alpha: 1)]
         colors[Brands.Discover.rawValue] = [UIColor.hexStr(hexStr: "#e8a258", alpha: 1), UIColor.hexStr(hexStr: "#D97B16", alpha: 1)]
         colors[Brands.DEFAULT.rawValue] = [UIColor.hexStr(hexStr: "#5D8BF2", alpha: 1), UIColor.hexStr(hexStr: "#3545AE", alpha: 1)]
+        
+        if cardGradientColors.count > 0 {
+            for (_, value) in cardGradientColors.enumerated() {
+                colors[value.key] = value.value
+            }
+        }
     }
 }
 

@@ -1,7 +1,8 @@
 # CreditCardForm
 
 [![CI Status](https://travis-ci.org/orazz/CreditCardForm-iOS.svg?branch=master)](https://travis-ci.org/orazz/CreditCardForm-iOS)
-<a href="https://cocoapods.org/pods/CreditCardForm"><img src="https://img.shields.io/badge/pod-0.1.9-blue.svg" alt="CocoaPods compatible" /></a>
+<a href="https://cocoapods.org/pods/CreditCardForm"><img
+src="https://img.shields.io/badge/pod-0.1.9-blue.svg" alt="CocoaPods compatible" /></a>
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 <a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/swift4.2-compatible-4BC51D.svg?style=flat" alt="Swift 4.2 compatible" /></a>
 <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform iOS" />
@@ -145,9 +146,17 @@ creditCardForm.backLineColor (UIColor)
 
 // Brands Color brand name, front color, back color
 [String: [UIColor]]
-creditCardForm.colors[Brands.Visa.rawValue] = [UIColor.black, UIColor.black]
+
+creditCardForm.cardGradientColors[Brands.Visa.rawValue] = [UIColor.blue, UIColor.red]
+
+~~creditCardForm.colors[Brands.Visa.rawValue] = [UIColor.black, UIColor.black]~~
 ...
-creditCardForm.colors[Brands.MasterCard.rawValue] = [UIColor.black, UIColor.black]
+~~creditCardForm.colors[Brands.MasterCard.rawValue] = [UIColor.black, UIColor.black]~~
+
+// Set font
+creditCardForm.cardNumberFont = UIFont(name: "FontName", size: 20)!
+creditCardForm.cardPlaceholdersFont = UIFont(name: "FontName", size: 10)!
+creditCardForm.cardTextFont = UIFont(name: "FontName", size: 12)!
 ```
 **2) Images**
 ``` swift
