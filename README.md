@@ -149,10 +149,6 @@ creditCardForm.backLineColor (UIColor)
 
 creditCardForm.cardGradientColors[Brands.Visa.rawValue] = [UIColor.blue, UIColor.red]
 
-~~creditCardForm.colors[Brands.Visa.rawValue] = [UIColor.black, UIColor.black]~~
-...
-~~creditCardForm.colors[Brands.MasterCard.rawValue] = [UIColor.black, UIColor.black]~~
-
 // Set font
 creditCardForm.cardNumberFont = UIFont(name: "FontName", size: 20)!
 creditCardForm.cardPlaceholdersFont = UIFont(name: "FontName", size: 10)!
