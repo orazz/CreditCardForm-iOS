@@ -14,7 +14,7 @@ CreditCardForm is iOS framework that allows developers to create the UI which re
 <strong style="color:red">Fixed typo use CreditCardForm instead ~~CreditCardForum~~</strong>
 
 ### Screenshots
-<img src="https://dotjpg.co/8bu.png" width="300"> <img src="Example/Screens/CreditCardDemo.gif" width="300"><img src="Example/Screens/dark.gif" width="300">
+<img src="https://dotjpg.co/aOI6.png" width="300"> <img src="Example/Screens/CreditCardDemo.gif" width="300">
 
 ## Example
 
